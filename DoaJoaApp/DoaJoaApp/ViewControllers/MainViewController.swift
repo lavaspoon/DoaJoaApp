@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
     //제목
     var titleLabel : UILabel = {
         let label = UILabel()
+        label.textColor = .white
         label.text = "헬로우 월드!!!"
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 50)
@@ -22,7 +23,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .red
+        view.backgroundColor = .black
         view.addSubview(titleLabel)
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
