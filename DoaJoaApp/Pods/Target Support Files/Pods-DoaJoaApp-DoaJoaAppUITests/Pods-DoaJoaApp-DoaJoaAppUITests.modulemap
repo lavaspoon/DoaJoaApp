@@ -1,0 +1,6 @@
+framework module Pods_DoaJoaApp_DoaJoaAppUITests {
+  umbrella header "Pods-DoaJoaApp-DoaJoaAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

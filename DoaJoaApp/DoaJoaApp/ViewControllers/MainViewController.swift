@@ -8,12 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     //제목
     var titleLabel : UILabel = {
         let label = UILabel()
+<<<<<<< HEAD:DoaJoaApp/DoaJoaApp/ViewController.swift
         label.text = "헬로우 월드"
+=======
+        label.textColor = .white
+        label.text = "헬로우 월드!!!"
+>>>>>>> 5142a17f0ad219336994eb2adf325baa9062acac:DoaJoaApp/DoaJoaApp/ViewControllers/MainViewController.swift
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 50)
         
@@ -22,7 +27,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .red
+        view.backgroundColor = .black
         view.addSubview(titleLabel)
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
