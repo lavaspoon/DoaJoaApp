@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     //제목
     var titleLabel : UILabel = {
         let label = UILabel()
-        label.text = "헬로우 월드!!!"
+        label.text = "헬로우 월드"
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 50)
         
