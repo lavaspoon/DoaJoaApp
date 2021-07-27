@@ -31,6 +31,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //네비게이션 바 수정
+        self.navigationController?.isNavigationBarHidden = true
         
         view.addSubview(animationView)
         view.backgroundColor = .black

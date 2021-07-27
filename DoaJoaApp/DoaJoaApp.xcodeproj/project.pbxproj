@@ -18,6 +18,7 @@
 		9E06620626AD017200547323 /* DoaJoaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06620526AD017200547323 /* DoaJoaAppTests.swift */; };
 		9E06621126AD017200547323 /* DoaJoaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06621026AD017200547323 /* DoaJoaAppUITests.swift */; };
 		9E06622026AF06D900547323 /* 70366-blender-edit.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E06621F26AF06D900547323 /* 70366-blender-edit.json */; };
+		9E06622326B0052200547323 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06622226B0052200547323 /* RegisterViewController.swift */; };
 		D1B2976A3919C4F0B5058B7E /* Pods_DoaJoaApp_DoaJoaAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94966889D0E467FCB90DFAE /* Pods_DoaJoaApp_DoaJoaAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		9E06621026AD017200547323 /* DoaJoaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoaJoaAppUITests.swift; sourceTree = "<group>"; };
 		9E06621226AD017200547323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E06621F26AF06D900547323 /* 70366-blender-edit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "70366-blender-edit.json"; sourceTree = "<group>"; };
+		9E06622226B0052200547323 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C94966889D0E467FCB90DFAE /* Pods_DoaJoaApp_DoaJoaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoaJoaApp_DoaJoaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96864E8EA1D804B05F34D2C /* Pods-DoaJoaApp-DoaJoaAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoaJoaApp-DoaJoaAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-DoaJoaApp-DoaJoaAppUITests/Pods-DoaJoaApp-DoaJoaAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D6F36F5E194BFCB46B841D79 /* Pods-DoaJoaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoaJoaApp.release.xcconfig"; path = "Target Support Files/Pods-DoaJoaApp/Pods-DoaJoaApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				9E06621F26AF06D900547323 /* 70366-blender-edit.json */,
+				9E06622126B004E900547323 /* Controllers */,
 				9E06621E26AD30C900547323 /* ViewControllers */,
 				9E0661EE26AD016D00547323 /* AppDelegate.swift */,
 				9E0661F026AD016D00547323 /* SceneDelegate.swift */,
@@ -174,9 +177,17 @@
 		9E06621E26AD30C900547323 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9E0661F226AD016D00547323 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9E06622126B004E900547323 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E06622226B0052200547323 /* RegisterViewController.swift */,
+				9E0661F226AD016D00547323 /* MainViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +433,7 @@
 				9E0661F326AD016D00547323 /* MainViewController.swift in Sources */,
 				9E0661EF26AD016D00547323 /* AppDelegate.swift in Sources */,
 				9E0661F126AD016D00547323 /* SceneDelegate.swift in Sources */,
+				9E06622326B0052200547323 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
