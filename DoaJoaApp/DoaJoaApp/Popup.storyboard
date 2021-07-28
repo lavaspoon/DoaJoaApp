@@ -7,18 +7,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Custom Pop Up View Controller-->
         <scene sceneID="kch-Y2-rIZ">
             <objects>
-                <viewController id="aO7-RV-dVi" sceneMemberID="viewController">
+                <viewController id="aO7-RV-dVi" customClass="CustomPopUpViewController" customModule="DoaJoaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dAp-C6-wAI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="app-pO-MDg" userLabel="bgBtn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGE-0u-0Ew" userLabel="contentView">
                                 <rect key="frame" x="82" y="273" width="250" height="350"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YfQ-gV-X1L">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_image" translatesAutoresizingMaskIntoConstraints="NO" id="YfQ-gV-X1L">
                                         <rect key="frame" x="65" y="20" width="120" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="UXy-eq-dJi"/>
@@ -61,10 +66,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.60186098699700341" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="app-pO-MDg" firstAttribute="top" secondItem="SjS-o0-vet" secondAttribute="top" id="1eP-Ur-gKF"/>
                             <constraint firstItem="xGE-0u-0Ew" firstAttribute="centerY" secondItem="dAp-C6-wAI" secondAttribute="centerY" id="FCO-0v-77g"/>
                             <constraint firstItem="xGE-0u-0Ew" firstAttribute="bottom" secondItem="UUu-pE-w1h" secondAttribute="bottom" constant="42" id="LNG-HZ-r9z"/>
+                            <constraint firstItem="app-pO-MDg" firstAttribute="trailing" secondItem="SjS-o0-vet" secondAttribute="trailing" id="ShZ-Ov-HzE"/>
                             <constraint firstItem="xGE-0u-0Ew" firstAttribute="centerX" secondItem="dAp-C6-wAI" secondAttribute="centerX" id="YPs-ot-N3o"/>
+                            <constraint firstItem="app-pO-MDg" firstAttribute="leading" secondItem="SjS-o0-vet" secondAttribute="leading" id="fmu-0v-i4g"/>
                             <constraint firstItem="UUu-pE-w1h" firstAttribute="centerX" secondItem="dAp-C6-wAI" secondAttribute="centerX" id="lu2-KQ-lvP"/>
+                            <constraint firstItem="SjS-o0-vet" firstAttribute="bottom" secondItem="app-pO-MDg" secondAttribute="bottom" id="mkt-d3-zra"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SjS-o0-vet"/>
                     </view>
@@ -74,4 +83,7 @@
             <point key="canvasLocation" x="105.79710144927537" y="71.651785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="my_image" width="249" height="284"/>
+    </resources>
 </document>

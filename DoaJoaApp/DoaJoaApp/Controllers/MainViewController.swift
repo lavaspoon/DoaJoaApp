@@ -11,6 +11,7 @@ import Lottie
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var createPopUpBtn: UIButton!
     //제목
     var titleLabel : UILabel = {
         let label = UILabel()
@@ -55,7 +56,10 @@ class MainViewController: UIViewController {
         }
         
     }
-
+    @IBAction func onCreatePopUpBtnClicked(_ sender: UIButton) {
+        print("MainViewController-onCreatePopUpBtnClicked() called")
+    }
+    
 
 }
 
