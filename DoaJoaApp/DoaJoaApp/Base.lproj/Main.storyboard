@@ -77,15 +77,22 @@
                                             <segue destination="qof-HX-kHM" kind="show" id="7VS-sa-1H9"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDf-rt-uuI">
+                                        <rect key="frame" x="172.5" y="668" width="69" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="POPUP"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Ogw-bb-G2P" secondAttribute="trailing" constant="20" id="5Yo-9u-Mqp"/>
+                                    <constraint firstItem="h0c-Ph-sEF" firstAttribute="top" secondItem="uDf-rt-uuI" secondAttribute="bottom" constant="20" id="EQd-pP-Ve9"/>
                                     <constraint firstItem="F3z-9M-Vg2" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="Ihj-90-Diz"/>
                                     <constraint firstItem="h0c-Ph-sEF" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="P4E-ql-soT"/>
                                     <constraint firstItem="F3z-9M-Vg2" firstAttribute="top" secondItem="L8x-Uu-JPb" secondAttribute="top" constant="30" id="SMv-Yt-gXR"/>
                                     <constraint firstItem="Ogw-bb-G2P" firstAttribute="leading" secondItem="L8x-Uu-JPb" secondAttribute="leading" constant="20" id="ecB-T4-1kV"/>
                                     <constraint firstAttribute="bottom" secondItem="h0c-Ph-sEF" secondAttribute="bottom" constant="20" id="oZO-Zi-Fsu"/>
+                                    <constraint firstItem="uDf-rt-uuI" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="rvS-WE-qhf"/>
                                     <constraint firstItem="Ogw-bb-G2P" firstAttribute="top" secondItem="F3z-9M-Vg2" secondAttribute="bottom" constant="20" id="siu-fY-ecC"/>
                                 </constraints>
                             </view>
