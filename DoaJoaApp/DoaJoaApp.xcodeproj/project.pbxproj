@@ -19,6 +19,7 @@
 		9E06621126AD017200547323 /* DoaJoaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06621026AD017200547323 /* DoaJoaAppUITests.swift */; };
 		9E06622026AF06D900547323 /* 70366-blender-edit.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E06621F26AF06D900547323 /* 70366-blender-edit.json */; };
 		9E06622326B0052200547323 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06622226B0052200547323 /* RegisterViewController.swift */; };
+		9ECA4D8A26B1999A00341A22 /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ECA4D8926B1999A00341A22 /* Popup.storyboard */; };
 		D1B2976A3919C4F0B5058B7E /* Pods_DoaJoaApp_DoaJoaAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94966889D0E467FCB90DFAE /* Pods_DoaJoaApp_DoaJoaAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		9E06621226AD017200547323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E06621F26AF06D900547323 /* 70366-blender-edit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "70366-blender-edit.json"; sourceTree = "<group>"; };
 		9E06622226B0052200547323 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9ECA4D8926B1999A00341A22 /* Popup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
 		C94966889D0E467FCB90DFAE /* Pods_DoaJoaApp_DoaJoaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoaJoaApp_DoaJoaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96864E8EA1D804B05F34D2C /* Pods-DoaJoaApp-DoaJoaAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoaJoaApp-DoaJoaAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-DoaJoaApp-DoaJoaAppUITests/Pods-DoaJoaApp-DoaJoaAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D6F36F5E194BFCB46B841D79 /* Pods-DoaJoaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoaJoaApp.release.xcconfig"; path = "Target Support Files/Pods-DoaJoaApp/Pods-DoaJoaApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				9E06621E26AD30C900547323 /* ViewControllers */,
 				9E0661EE26AD016D00547323 /* AppDelegate.swift */,
 				9E0661F026AD016D00547323 /* SceneDelegate.swift */,
+				9ECA4D8926B1999A00341A22 /* Popup.storyboard */,
 				9E0661F426AD016D00547323 /* Main.storyboard */,
 				9E0661F726AD017200547323 /* Assets.xcassets */,
 				9E0661F926AD017200547323 /* LaunchScreen.storyboard */,
@@ -303,6 +306,7 @@
 				9E06622026AF06D900547323 /* 70366-blender-edit.json in Resources */,
 				9E0661F826AD017200547323 /* Assets.xcassets in Resources */,
 				9E0661F626AD016D00547323 /* Main.storyboard in Resources */,
+				9ECA4D8A26B1999A00341A22 /* Popup.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
