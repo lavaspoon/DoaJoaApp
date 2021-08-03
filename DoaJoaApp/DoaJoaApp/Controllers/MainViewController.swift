@@ -63,13 +63,19 @@ class MainViewController: UIViewController {
         //스토리보드 가져오기
         let storyboard = UIStoryboard.init(name: "PopUp", bundle: nil)
         //스토리보드 통해 뷰컨트롤러 가져오기
-        let alertPopUpVP = storyboard.instantiateViewController(withIdentifier: "AlertPopUpVC")
+        let customPopUpVC = storyboard.instantiateViewController(withIdentifier: "AlertPopUpVC") as! CustomPopUpViewController
         //뷰 컨트롤러가 보여지는 스타일
-        alertPopUpVP.modalPresentationStyle = .overCurrentContext
+        customPopUpVC.modalPresentationStyle = .overCurrentContext
         //뷰 컨트롤러가 사라지는 스타일
-        alertPopUpVP.modalTransitionStyle = .crossDissolve
+        customPopUpVC.modalTransitionStyle = .crossDissolve
         
-        self.present(alertPopUpVP, animated: true, completion: nil)
+        customPopUpVC.subscribeBtnCompletionClosure = {
+            print("컴플리션 블록 호출")
+            let myChannelUrl = URL(string: "https://devlava.tistory.com")
+            self.myWebView.load(URLRequest(url: myChannelUrl!))
+            print("웹뷰")
+        }
+        self.present(customPopUpVC, animated: true, completion: nil)
     }
     
 

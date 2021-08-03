@@ -12,6 +12,8 @@ class CustomPopUpViewController : UIViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var subscribeBtn: UIButton!
     @IBOutlet weak var bgBtn: UIButton!
+    
+    var subscribeBtnCompletionClosure: (()->Void)?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +28,12 @@ class CustomPopUpViewController : UIViewController {
     }
     @IBAction func onSubscribeBtnClicked(_ sender: UIButton) {
         print("CustomPopUpViewController - onSubscribeBtnClicked() called")
-        
+        self.dismiss(animated: true, completion: nil)
+        //컴플레션 블록 호출
+        if let subscribeBtnCompletionClosure = subscribeBtnCompletionClosure{
+            //메인에 알린다
+            subscribeBtnCompletionClosure()
+        }
     }
     
 }
