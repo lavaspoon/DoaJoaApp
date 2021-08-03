@@ -8,10 +8,12 @@
 
 import UIKit
 import Lottie
+import WebKit
 
 class MainViewController: UIViewController {
     
     @IBOutlet weak var createPopUpBtn: UIButton!
+    @IBOutlet weak var myWebView: WKWebView!
     //제목
     var titleLabel : UILabel = {
         let label = UILabel()
@@ -58,6 +60,16 @@ class MainViewController: UIViewController {
     }
     @IBAction func onCreatePopUpBtnClicked(_ sender: UIButton) {
         print("MainViewController-onCreatePopUpBtnClicked() callewd!!!")
+        //스토리보드 가져오기
+        let storyboard = UIStoryboard.init(name: "PopUp", bundle: nil)
+        //스토리보드 통해 뷰컨트롤러 가져오기
+        let alertPopUpVP = storyboard.instantiateViewController(withIdentifier: "AlertPopUpVC")
+        //뷰 컨트롤러가 보여지는 스타일
+        alertPopUpVP.modalPresentationStyle = .overCurrentContext
+        //뷰 컨트롤러가 사라지는 스타일
+        alertPopUpVP.modalTransitionStyle = .crossDissolve
+        
+        self.present(alertPopUpVP, animated: true, completion: nil)
     }
     
 
