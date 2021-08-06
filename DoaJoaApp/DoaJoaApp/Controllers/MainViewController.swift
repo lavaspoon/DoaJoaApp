@@ -10,7 +10,7 @@ import UIKit
 import Lottie
 import WebKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, PopUpDelegate {
     
     @IBOutlet weak var createPopUpBtn: UIButton!
     @IBOutlet weak var myWebView: WKWebView!
@@ -23,7 +23,7 @@ class MainViewController: UIViewController {
         
     }
     @IBAction func onCreatePopUpBtnClicked(_ sender: UIButton) {
-        print("MainViewController-onCreatePopUpBtnClicked() callewd!!!")
+        print("MainViewController-onCreatePopUpBtnClicked() called!!!")
         //스토리보드 가져오기
         let storyboard = UIStoryboard.init(name: "PopUp", bundle: nil)
         //스토리보드 통해 뷰컨트롤러 가져오기
@@ -39,9 +39,15 @@ class MainViewController: UIViewController {
             self.myWebView.load(URLRequest(url: myChannelUrl!))
             print("웹뷰")
         }
+        
+        customPopUpVC.myPopUpDelegate = self
         self.present(customPopUpVC, animated: true, completion: nil)
     }
-    
+    //MARK - PopUpDelegate methods
+    func ongotoKakaoBtnClicked() {
+        print("MainViewController-ongotoKakaoBtnClicked() called!!!")
+        
+    }
 
 }
 

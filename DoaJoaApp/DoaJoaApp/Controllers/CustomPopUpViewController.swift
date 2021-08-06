@@ -12,8 +12,11 @@ class CustomPopUpViewController : UIViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var subscribeBtn: UIButton!
     @IBOutlet weak var bgBtn: UIButton!
+    @IBOutlet weak var gotoKakaoBtn: UIButton!
     
     var subscribeBtnCompletionClosure: (()->Void)?
+    var myPopUpDelegate : PopUpDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +37,10 @@ class CustomPopUpViewController : UIViewController {
             //메인에 알린다
             subscribeBtnCompletionClosure()
         }
+    }
+    @IBAction func ongotoKakaoBtnClicked(_ sender: UIButton) {
+        print("CustomPopUpViewController - ongotoKakaoBtnClicked() called")
+        myPopUpDelegate?.ongotoKakaoBtnClicked()
     }
     
 }
