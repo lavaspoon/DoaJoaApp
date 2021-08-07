@@ -52,6 +52,7 @@ class MainViewController: UIViewController, PopUpDelegate {
     }
     func onchangeTextBtnClicked() {
         print("MainViewController-onchangeTextBtnClicked() called!!!")
+        testLabel.text = "텍스트바뀜"
     }
 }
 
