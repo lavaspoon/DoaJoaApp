@@ -11,7 +11,8 @@ import Lottie
 import WebKit
 
 class MainViewController: UIViewController, PopUpDelegate {
-    
+
+    @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var createPopUpBtn: UIButton!
     @IBOutlet weak var myWebView: WKWebView!
     
@@ -39,8 +40,9 @@ class MainViewController: UIViewController, PopUpDelegate {
             self.myWebView.load(URLRequest(url: myChannelUrl!))
             print("웹뷰")
         }
-        
+        // ?
         customPopUpVC.myPopUpDelegate = self
+        
         self.present(customPopUpVC, animated: true, completion: nil)
     }
     //MARK - PopUpDelegate methods
@@ -48,6 +50,8 @@ class MainViewController: UIViewController, PopUpDelegate {
         print("MainViewController-ongotoKakaoBtnClicked() called!!!")
         
     }
-
+    func onchangeTextBtnClicked() {
+        print("MainViewController-onchangeTextBtnClicked() called!!!")
+    }
 }
 

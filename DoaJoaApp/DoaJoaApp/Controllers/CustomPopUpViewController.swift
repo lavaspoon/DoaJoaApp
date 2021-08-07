@@ -13,6 +13,7 @@ class CustomPopUpViewController : UIViewController {
     @IBOutlet weak var subscribeBtn: UIButton!
     @IBOutlet weak var bgBtn: UIButton!
     @IBOutlet weak var gotoKakaoBtn: UIButton!
+    @IBOutlet weak var changeTextBtn: UIButton!
     
     var subscribeBtnCompletionClosure: (()->Void)?
     var myPopUpDelegate : PopUpDelegate?
@@ -21,10 +22,13 @@ class CustomPopUpViewController : UIViewController {
         super.viewDidLoad()
         
         print("CustomPopUpViewController - viewDidLoad() called")
-        contentView.layer.cornerRadius = 20
-        subscribeBtn.layer.cornerRadius = 20
-        
+        contentView.layer.cornerRadius = 30
+        subscribeBtn.layer.cornerRadius = 10
+        gotoKakaoBtn.layer.cornerRadius = 10
+        changeTextBtn.layer.cornerRadius = 10
     }
+    
+    //MARK: IBAction
     @IBAction func onBgBtnClicked(_ sender: UIButton) {
         print("CustomPopUpViewController - onBgBtnClicked() called")
         self.dismiss(animated: true, completion: nil)
@@ -42,5 +46,10 @@ class CustomPopUpViewController : UIViewController {
         print("CustomPopUpViewController - ongotoKakaoBtnClicked() called")
         myPopUpDelegate?.ongotoKakaoBtnClicked()
     }
+    @IBAction func onchangeTextBtnClicked(_ sender: UIButton) {
+        print("CustomPopUpViewController - onchangeTextBtnClicked() called")
+        myPopUpDelegate?.onchangeTextBtnClicked()
+    }
+    
     
 }

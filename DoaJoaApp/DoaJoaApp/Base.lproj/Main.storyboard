@@ -93,10 +93,22 @@
                                             <action selector="onCreatePopUpBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d85-7V-vzF"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="버튼클릭되지않음" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaA-sK-G4L">
+                                        <rect key="frame" x="147" y="597.5" width="120" height="20.5"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="dM4-G9-pIK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Ogw-bb-G2P" secondAttribute="trailing" constant="20" id="5Yo-9u-Mqp"/>
+                                    <constraint firstItem="RaA-sK-G4L" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="8Eu-lC-Xg0"/>
+                                    <constraint firstItem="uDf-rt-uuI" firstAttribute="top" secondItem="RaA-sK-G4L" secondAttribute="bottom" constant="50" id="BgE-QD-73s"/>
                                     <constraint firstItem="h0c-Ph-sEF" firstAttribute="top" secondItem="uDf-rt-uuI" secondAttribute="bottom" constant="20" id="EQd-pP-Ve9"/>
                                     <constraint firstItem="F3z-9M-Vg2" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="Ihj-90-Diz"/>
                                     <constraint firstItem="h0c-Ph-sEF" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="P4E-ql-soT"/>
@@ -125,6 +137,7 @@
                     <connections>
                         <outlet property="createPopUpBtn" destination="uDf-rt-uuI" id="Q2C-Li-KYw"/>
                         <outlet property="myWebView" destination="ws8-At-Cj2" id="m5d-rr-Qhu"/>
+                        <outlet property="testLabel" destination="RaA-sK-G4L" id="K5v-dH-FbW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
