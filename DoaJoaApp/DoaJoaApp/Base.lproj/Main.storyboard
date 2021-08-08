@@ -103,14 +103,23 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWV-P2-RFg">
+                                        <rect key="frame" x="192" y="516" width="30" height="30"/>
+                                        <state key="normal" title="web"/>
+                                        <connections>
+                                            <action selector="ongotoWebViewBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UMa-aK-Nb0"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Ogw-bb-G2P" secondAttribute="trailing" constant="20" id="5Yo-9u-Mqp"/>
                                     <constraint firstItem="RaA-sK-G4L" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="8Eu-lC-Xg0"/>
                                     <constraint firstItem="uDf-rt-uuI" firstAttribute="top" secondItem="RaA-sK-G4L" secondAttribute="bottom" constant="50" id="BgE-QD-73s"/>
+                                    <constraint firstItem="RaA-sK-G4L" firstAttribute="top" secondItem="JWV-P2-RFg" secondAttribute="bottom" constant="51.5" id="BoC-ee-ytR"/>
                                     <constraint firstItem="h0c-Ph-sEF" firstAttribute="top" secondItem="uDf-rt-uuI" secondAttribute="bottom" constant="20" id="EQd-pP-Ve9"/>
                                     <constraint firstItem="F3z-9M-Vg2" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="Ihj-90-Diz"/>
+                                    <constraint firstItem="JWV-P2-RFg" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="NCV-Zy-JfI"/>
                                     <constraint firstItem="h0c-Ph-sEF" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="P4E-ql-soT"/>
                                     <constraint firstItem="F3z-9M-Vg2" firstAttribute="top" secondItem="L8x-Uu-JPb" secondAttribute="top" constant="30" id="SMv-Yt-gXR"/>
                                     <constraint firstItem="Ogw-bb-G2P" firstAttribute="leading" secondItem="L8x-Uu-JPb" secondAttribute="leading" constant="20" id="ecB-T4-1kV"/>
@@ -136,6 +145,7 @@
                     <navigationItem key="navigationItem" id="bwX-Dq-PmA"/>
                     <connections>
                         <outlet property="createPopUpBtn" destination="uDf-rt-uuI" id="Q2C-Li-KYw"/>
+                        <outlet property="gotoWebViewBtn" destination="JWV-P2-RFg" id="Ik3-25-z6w"/>
                         <outlet property="myWebView" destination="ws8-At-Cj2" id="m5d-rr-Qhu"/>
                         <outlet property="testLabel" destination="RaA-sK-G4L" id="K5v-dH-FbW"/>
                     </connections>

@@ -15,6 +15,7 @@ class MainViewController: UIViewController, PopUpDelegate {
     @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var createPopUpBtn: UIButton!
     @IBOutlet weak var myWebView: WKWebView!
+    @IBOutlet weak var gotoWebViewBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +54,13 @@ class MainViewController: UIViewController, PopUpDelegate {
     func onchangeTextBtnClicked() {
         print("MainViewController-onchangeTextBtnClicked() called!!!")
         testLabel.text = "텍스트바뀜"
+    }
+    @IBAction func ongotoWebViewBtn(_ sender: UIButton) {
+        print("MainViewController-ongotoWebViewBtn()")
+        let storyboard = UIStoryboard.init(name: "WebView", bundle: nil)
+        //스토리보드 통해 뷰컨트롤러 가져오기
+        let webviewVC = storyboard.instantiateViewController(withIdentifier: "testWebView") as! WebViewController
+        self.present(webviewVC, animated: true, completion: nil)
     }
 }
 
