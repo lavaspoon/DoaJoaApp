@@ -39,20 +39,28 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="어서오세요!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgL-9u-dyR">
-                                        <rect key="frame" x="81" y="180.5" width="88.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pm7-h0-i0a">
-                                        <rect key="frame" x="65" y="230" width="120" height="110"/>
+                                        <rect key="frame" x="65" y="190" width="120" height="150"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OgJ-X6-Gw6">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="110"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejY-SK-LX4">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92q-Ux-Gn2">
                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
+                                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="120" id="Da1-PQ-foY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" title="티스토리 가기">
+                                                            <color key="titleColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="gotoBlogBtnClicked:" destination="aO7-RV-dVi" eventType="touchUpInside" id="Exx-BF-hAP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejY-SK-LX4">
+                                                        <rect key="frame" x="0.0" y="40" width="120" height="30"/>
                                                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="120" id="W6v-zt-VRf"/>
@@ -65,7 +73,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrk-B6-5KL">
-                                                        <rect key="frame" x="0.0" y="40" width="120" height="30"/>
+                                                        <rect key="frame" x="0.0" y="80" width="120" height="30"/>
                                                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="120" id="Waj-yg-pbq"/>
@@ -78,7 +86,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUu-pE-w1h">
-                                                        <rect key="frame" x="0.0" y="80" width="120" height="30"/>
+                                                        <rect key="frame" x="0.0" y="120" width="120" height="30"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="120" id="7ec-RY-Fec"/>
@@ -98,12 +106,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="pm7-h0-i0a" secondAttribute="bottom" constant="10" id="3B1-Pk-PCK"/>
-                                    <constraint firstItem="bgL-9u-dyR" firstAttribute="top" secondItem="KsO-cp-CDc" secondAttribute="bottom" constant="8" id="6Xo-bx-K5M"/>
                                     <constraint firstAttribute="height" constant="350" id="CZ2-JK-qxF"/>
                                     <constraint firstItem="YfQ-gV-X1L" firstAttribute="top" secondItem="xGE-0u-0Ew" secondAttribute="top" constant="20" id="fgp-MS-dlJ"/>
                                     <constraint firstItem="KsO-cp-CDc" firstAttribute="top" secondItem="YfQ-gV-X1L" secondAttribute="bottom" constant="12" id="jfX-9Q-7lb"/>
                                     <constraint firstItem="YfQ-gV-X1L" firstAttribute="centerX" secondItem="xGE-0u-0Ew" secondAttribute="centerX" id="kV7-4k-6BX"/>
-                                    <constraint firstItem="bgL-9u-dyR" firstAttribute="centerX" secondItem="xGE-0u-0Ew" secondAttribute="centerX" id="kmR-Bu-AJm"/>
                                     <constraint firstItem="pm7-h0-i0a" firstAttribute="centerX" secondItem="xGE-0u-0Ew" secondAttribute="centerX" id="q0Q-Lr-w2M"/>
                                     <constraint firstAttribute="width" constant="250" id="ueq-6J-gmL"/>
                                     <constraint firstItem="KsO-cp-CDc" firstAttribute="centerX" secondItem="xGE-0u-0Ew" secondAttribute="centerX" id="zC4-3V-AyC"/>
@@ -123,6 +129,7 @@
                     </view>
                     <connections>
                         <outlet property="bgBtn" destination="app-pO-MDg" id="eBF-pN-CyG"/>
+                        <outlet property="blogBtn" destination="92q-Ux-Gn2" id="RRk-b9-mfQ"/>
                         <outlet property="changeTextBtn" destination="ejY-SK-LX4" id="YG5-EM-LeF"/>
                         <outlet property="contentView" destination="xGE-0u-0Ew" id="wZr-c2-YLD"/>
                         <outlet property="gotoKakaoBtn" destination="rrk-B6-5KL" id="4BD-sw-PxV"/>

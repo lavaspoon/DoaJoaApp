@@ -10,6 +10,8 @@ import UIKit
 import Lottie
 import WebKit
 
+let notificationName = "btnClickNotification"
+
 class MainViewController: UIViewController, PopUpDelegate {
 
     @IBOutlet weak var testLabel: UILabel!
@@ -17,12 +19,22 @@ class MainViewController: UIViewController, PopUpDelegate {
     @IBOutlet weak var myWebView: WKWebView!
     @IBOutlet weak var gotoWebViewBtn: UIButton!
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //노티피케이션이라는 방송 수신기 장착
+        NotificationCenter.default.addObserver(self, selector: #selector(loadWebview), name: NSNotification.Name(rawValue: notificationName), object: nil)
         //네비게이션 바 수정
         self.navigationController?.isNavigationBarHidden = true
         
+    }
+    
+    @objc fileprivate func loadWebview(){
+        print("MainViewController-loadWebview() called")
+        let myblogAddress = URL(string: "https://devlava.tstory.com")
+        self.myWebView.load(URLRequest(url: myblogAddress!))
     }
     @IBAction func onCreatePopUpBtnClicked(_ sender: UIButton) {
         print("MainViewController-onCreatePopUpBtnClicked() called!!!")
