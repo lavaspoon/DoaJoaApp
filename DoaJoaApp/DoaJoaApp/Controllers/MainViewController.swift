@@ -60,6 +60,7 @@ class MainViewController: UIViewController, PopUpDelegate {
         let storyboard = UIStoryboard.init(name: "WebView", bundle: nil)
         //스토리보드 통해 뷰컨트롤러 가져오기
         let webviewVC = storyboard.instantiateViewController(withIdentifier: "testWebView") as! WebViewController
+        //넥비게이터로 수정필요
         self.present(webviewVC, animated: true, completion: nil)
     }
 }
