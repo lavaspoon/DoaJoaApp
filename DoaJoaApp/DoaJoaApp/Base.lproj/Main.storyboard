@@ -42,39 +42,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8x-Uu-JPb" userLabel="ContainerView">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testImage" translatesAutoresizingMaskIntoConstraints="NO" id="F3z-9M-Vg2">
-                                        <rect key="frame" x="98" y="30" width="218" height="182"/>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ogw-bb-G2P">
-                                        <rect key="frame" x="20" y="232" width="374" height="142"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jrg-N8-YUS">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ecZ-Hb-1tF">
-                                                <rect key="frame" x="0.0" y="54" width="374" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77x-yS-e3D">
-                                                <rect key="frame" x="0.0" y="108" width="374" height="34"/>
-                                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="로그인">
-                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="F3z-9M-Vg2">
+                                        <rect key="frame" x="147" y="80.5" width="120" height="119"/>
                                         <constraints>
-                                            <constraint firstItem="77x-yS-e3D" firstAttribute="leading" secondItem="Ogw-bb-G2P" secondAttribute="leading" id="0ld-kk-E4V"/>
-                                            <constraint firstAttribute="trailing" secondItem="Jrg-N8-YUS" secondAttribute="trailing" id="3Ei-vS-Oeb"/>
-                                            <constraint firstAttribute="trailing" secondItem="77x-yS-e3D" secondAttribute="trailing" id="Ccq-8P-3W8"/>
-                                            <constraint firstItem="ecZ-Hb-1tF" firstAttribute="leading" secondItem="Ogw-bb-G2P" secondAttribute="leading" id="jTp-Xq-1bz"/>
-                                            <constraint firstAttribute="trailing" secondItem="ecZ-Hb-1tF" secondAttribute="trailing" id="kFb-KX-Z8U"/>
-                                            <constraint firstItem="Jrg-N8-YUS" firstAttribute="leading" secondItem="Ogw-bb-G2P" secondAttribute="leading" id="kIJ-KE-0cS"/>
+                                            <constraint firstAttribute="width" constant="120" id="Tje-RR-rcJ"/>
+                                            <constraint firstAttribute="height" constant="120" id="dl4-lB-7PR"/>
                                         </constraints>
-                                    </stackView>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0c-Ph-sEF">
                                         <rect key="frame" x="174.5" y="724" width="65" height="30"/>
                                         <constraints>
@@ -110,22 +84,30 @@
                                             <action selector="ongotoWebViewBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UMa-aK-Nb0"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixi-JR-KBG">
+                                        <rect key="frame" x="147" y="300" width="120" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="vjt-WP-DUL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="프로필"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Ogw-bb-G2P" secondAttribute="trailing" constant="20" id="5Yo-9u-Mqp"/>
                                     <constraint firstItem="RaA-sK-G4L" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="8Eu-lC-Xg0"/>
+                                    <constraint firstItem="ixi-JR-KBG" firstAttribute="top" secondItem="F3z-9M-Vg2" secondAttribute="bottom" constant="100" id="8cx-IK-dof"/>
                                     <constraint firstItem="uDf-rt-uuI" firstAttribute="top" secondItem="RaA-sK-G4L" secondAttribute="bottom" constant="50" id="BgE-QD-73s"/>
                                     <constraint firstItem="RaA-sK-G4L" firstAttribute="top" secondItem="JWV-P2-RFg" secondAttribute="bottom" constant="51.5" id="BoC-ee-ytR"/>
                                     <constraint firstItem="h0c-Ph-sEF" firstAttribute="top" secondItem="uDf-rt-uuI" secondAttribute="bottom" constant="20" id="EQd-pP-Ve9"/>
                                     <constraint firstItem="F3z-9M-Vg2" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="Ihj-90-Diz"/>
                                     <constraint firstItem="JWV-P2-RFg" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="NCV-Zy-JfI"/>
                                     <constraint firstItem="h0c-Ph-sEF" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="P4E-ql-soT"/>
-                                    <constraint firstItem="F3z-9M-Vg2" firstAttribute="top" secondItem="L8x-Uu-JPb" secondAttribute="top" constant="30" id="SMv-Yt-gXR"/>
-                                    <constraint firstItem="Ogw-bb-G2P" firstAttribute="leading" secondItem="L8x-Uu-JPb" secondAttribute="leading" constant="20" id="ecB-T4-1kV"/>
+                                    <constraint firstItem="F3z-9M-Vg2" firstAttribute="top" secondItem="L8x-Uu-JPb" secondAttribute="top" constant="80" id="bqr-q2-Gd8"/>
+                                    <constraint firstItem="ixi-JR-KBG" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="l8u-Gz-bDU"/>
                                     <constraint firstAttribute="bottom" secondItem="h0c-Ph-sEF" secondAttribute="bottom" constant="20" id="oZO-Zi-Fsu"/>
                                     <constraint firstItem="uDf-rt-uuI" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="rvS-WE-qhf"/>
-                                    <constraint firstItem="Ogw-bb-G2P" firstAttribute="top" secondItem="F3z-9M-Vg2" secondAttribute="bottom" constant="20" id="siu-fY-ecC"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -145,8 +127,10 @@
                     <navigationItem key="navigationItem" id="bwX-Dq-PmA"/>
                     <connections>
                         <outlet property="createPopUpBtn" destination="uDf-rt-uuI" id="Q2C-Li-KYw"/>
+                        <outlet property="editProfile" destination="ixi-JR-KBG" id="Xwg-Hg-SH0"/>
                         <outlet property="gotoWebViewBtn" destination="JWV-P2-RFg" id="Ik3-25-z6w"/>
                         <outlet property="myWebView" destination="ws8-At-Cj2" id="m5d-rr-Qhu"/>
+                        <outlet property="profileImage" destination="F3z-9M-Vg2" id="suX-cH-ror"/>
                         <outlet property="testLabel" destination="RaA-sK-G4L" id="K5v-dH-FbW"/>
                     </connections>
                 </viewController>
@@ -248,6 +232,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="testImage" width="218" height="182"/>
     </resources>
 </document>

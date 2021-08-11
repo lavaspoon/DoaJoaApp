@@ -14,21 +14,29 @@ let notificationName = "btnClickNotification"
 
 class MainViewController: UIViewController, PopUpDelegate {
 
+    @IBOutlet weak var editProfile: UIButton!
+    @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var createPopUpBtn: UIButton!
     @IBOutlet weak var myWebView: WKWebView!
     @IBOutlet weak var gotoWebViewBtn: UIButton!
     
-    deinit {
-        NotificationCenter.default.removeObserver(self)
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //노티피케이션이라는 방송 수신기 장착
         NotificationCenter.default.addObserver(self, selector: #selector(loadWebview), name: NSNotification.Name(rawValue: notificationName), object: nil)
         //네비게이션 바 수정
         self.navigationController?.isNavigationBarHidden = true
-        
+        //프로필 이미지
+        self.profileImage.layer.cornerRadius = profileImage.frame.height / 2
+        self.editProfile.layer.cornerRadius = 10;
+        //버튼클릭 액션 설정
+        self.editProfile.addTarget(self, action: #selector(editProfileClicked), for: .touchUpInside)
+    }
+    
+    @objc fileprivate func editProfileClicked(){
+        print("MainViewController-editProfileClicked()")
     }
     
     @objc fileprivate func loadWebview(){
@@ -75,5 +83,6 @@ class MainViewController: UIViewController, PopUpDelegate {
         //넥비게이터로 수정필요
         self.present(webviewVC, animated: true, completion: nil)
     }
+    
 }
 
