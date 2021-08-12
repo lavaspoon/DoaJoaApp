@@ -93,15 +93,31 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="프로필"/>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEA-Wd-JV6">
+                                        <rect key="frame" x="147" y="380" width="120" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="b5W-AR-DYf"/>
+                                            <constraint firstAttribute="width" constant="120" id="yDu-YT-uQz"/>
+                                        </constraints>
+                                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <state key="normal" title="도아화이팅!!!"/>
+                                        <connections>
+                                            <action selector="onDoaBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LuQ-OW-PDM"/>
+                                            <segue destination="rdg-nF-InF" kind="show" id="dKS-bY-T2R"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="RaA-sK-G4L" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="8Eu-lC-Xg0"/>
                                     <constraint firstItem="ixi-JR-KBG" firstAttribute="top" secondItem="F3z-9M-Vg2" secondAttribute="bottom" constant="100" id="8cx-IK-dof"/>
+                                    <constraint firstItem="fEA-Wd-JV6" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="8jh-Pr-STH"/>
                                     <constraint firstItem="uDf-rt-uuI" firstAttribute="top" secondItem="RaA-sK-G4L" secondAttribute="bottom" constant="50" id="BgE-QD-73s"/>
                                     <constraint firstItem="RaA-sK-G4L" firstAttribute="top" secondItem="JWV-P2-RFg" secondAttribute="bottom" constant="51.5" id="BoC-ee-ytR"/>
                                     <constraint firstItem="h0c-Ph-sEF" firstAttribute="top" secondItem="uDf-rt-uuI" secondAttribute="bottom" constant="20" id="EQd-pP-Ve9"/>
                                     <constraint firstItem="F3z-9M-Vg2" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="Ihj-90-Diz"/>
+                                    <constraint firstItem="fEA-Wd-JV6" firstAttribute="top" secondItem="ixi-JR-KBG" secondAttribute="bottom" constant="50" id="Ms9-E0-5ql"/>
                                     <constraint firstItem="JWV-P2-RFg" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="NCV-Zy-JfI"/>
                                     <constraint firstItem="h0c-Ph-sEF" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="P4E-ql-soT"/>
                                     <constraint firstItem="F3z-9M-Vg2" firstAttribute="top" secondItem="L8x-Uu-JPb" secondAttribute="top" constant="80" id="bqr-q2-Gd8"/>
@@ -128,6 +144,7 @@
                     <connections>
                         <outlet property="createPopUpBtn" destination="uDf-rt-uuI" id="Q2C-Li-KYw"/>
                         <outlet property="editProfile" destination="ixi-JR-KBG" id="Xwg-Hg-SH0"/>
+                        <outlet property="gotoDoaBtn" destination="fEA-Wd-JV6" id="h8j-8J-UYc"/>
                         <outlet property="gotoWebViewBtn" destination="JWV-P2-RFg" id="Ik3-25-z6w"/>
                         <outlet property="myWebView" destination="ws8-At-Cj2" id="m5d-rr-Qhu"/>
                         <outlet property="profileImage" destination="F3z-9M-Vg2" id="suX-cH-ror"/>
@@ -137,6 +154,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+        <!--Home View Controller Controller-->
+        <scene sceneID="aOH-hn-Yaj">
+            <objects>
+                <viewController id="rdg-nF-InF" customClass="HomeViewControllerController" customModule="DoaJoaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q7L-Us-JDk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5th-iT-luY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Pn-fk-doA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YTk-8u-Wh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="825"/>
+        </scene>
+        <!--Write View Controller-->
+        <scene sceneID="GCz-LS-9eg">
+            <objects>
+                <viewController id="pzg-ha-bJu" customClass="WriteViewController" customModule="DoaJoaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gSD-Vp-oUY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="LJO-SI-qLi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fD4-XU-WdG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZYG-NO-ulb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="825"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="kFs-Ry-jbY">

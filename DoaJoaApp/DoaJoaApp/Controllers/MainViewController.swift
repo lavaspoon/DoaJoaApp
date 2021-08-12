@@ -21,6 +21,7 @@ class MainViewController: UIViewController, PopUpDelegate {
     @IBOutlet weak var createPopUpBtn: UIButton!
     @IBOutlet weak var myWebView: WKWebView!
     @IBOutlet weak var gotoWebViewBtn: UIButton!
+    @IBOutlet weak var gotoDoaBtn: UIButton!
     
     
     override func viewDidLoad() {
@@ -31,8 +32,9 @@ class MainViewController: UIViewController, PopUpDelegate {
         self.navigationController?.isNavigationBarHidden = true
         //프로필 이미지
         self.profileImage.layer.cornerRadius = profileImage.frame.height / 2
-        self.editProfile.layer.cornerRadius = 10;
-        //버튼클릭 액션 설정
+        self.editProfile.layer.cornerRadius = 10
+        self.gotoDoaBtn.layer.cornerRadius = 10
+        //버튼클릭 액션 설정(Swift를 사용한 코드를 Objective-C 코드와 상호작용 시키기 위해 쓰는 키워드)
         self.editProfile.addTarget(self, action: #selector(editProfileClicked), for: .touchUpInside)
     }
     
@@ -108,6 +110,9 @@ class MainViewController: UIViewController, PopUpDelegate {
         //넥비게이터로 수정필요
         self.present(webviewVC, animated: true, completion: nil)
     }
-    
+    //MARK : gotoDoaBtn Action
+    @IBAction func onDoaBtnClicked(_ sender: UIButton) {
+        print("MainViewController-onDoaBtnClicked()")
+    }
 }
 

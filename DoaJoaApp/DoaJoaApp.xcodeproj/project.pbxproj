@@ -19,6 +19,8 @@
 		9E06621126AD017200547323 /* DoaJoaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06621026AD017200547323 /* DoaJoaAppUITests.swift */; };
 		9E06622026AF06D900547323 /* 70366-blender-edit.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E06621F26AF06D900547323 /* 70366-blender-edit.json */; };
 		9E06622326B0052200547323 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06622226B0052200547323 /* RegisterViewController.swift */; };
+		9EB8D72226C56DC4003CBEAE /* HomeVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8D72126C56DC4003CBEAE /* HomeVIewController.swift */; };
+		9EB8D72426C56F0E003CBEAE /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8D72326C56F0E003CBEAE /* WriteViewController.swift */; };
 		9EC9B8A526C034EB0007ED2C /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC9B8A426C034EB0007ED2C /* WebView.storyboard */; };
 		9EC9B8A726C035AE0007ED2C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC9B8A626C035AE0007ED2C /* WebViewController.swift */; };
 		9ECA4D8A26B1999A00341A22 /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ECA4D8926B1999A00341A22 /* PopUp.storyboard */; };
@@ -67,6 +69,8 @@
 		9E06621226AD017200547323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E06621F26AF06D900547323 /* 70366-blender-edit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "70366-blender-edit.json"; sourceTree = "<group>"; };
 		9E06622226B0052200547323 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9EB8D72126C56DC4003CBEAE /* HomeVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVIewController.swift; sourceTree = "<group>"; };
+		9EB8D72326C56F0E003CBEAE /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		9EC9B8A426C034EB0007ED2C /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
 		9EC9B8A626C035AE0007ED2C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		9ECA4D8926B1999A00341A22 /* PopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
@@ -205,6 +209,8 @@
 				9E0661F226AD016D00547323 /* MainViewController.swift */,
 				9ECA4D8B26B1ADC800341A22 /* CustomPopUpViewController.swift */,
 				9EC9B8A626C035AE0007ED2C /* WebViewController.swift */,
+				9EB8D72126C56DC4003CBEAE /* HomeVIewController.swift */,
+				9EB8D72326C56F0E003CBEAE /* WriteViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -451,9 +457,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EB8D72426C56F0E003CBEAE /* WriteViewController.swift in Sources */,
 				9E0661F326AD016D00547323 /* MainViewController.swift in Sources */,
 				9ECCB17F26BD806000BDECD2 /* PopUpDelegate.swift in Sources */,
 				9E0661EF26AD016D00547323 /* AppDelegate.swift in Sources */,
+				9EB8D72226C56DC4003CBEAE /* HomeVIewController.swift in Sources */,
 				9E0661F126AD016D00547323 /* SceneDelegate.swift in Sources */,
 				9EC9B8A726C035AE0007ED2C /* WebViewController.swift in Sources */,
 				9E06622326B0052200547323 /* RegisterViewController.swift in Sources */,
