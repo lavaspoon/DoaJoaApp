@@ -15,4 +15,7 @@ class HomeViewControllerController : UIViewController {
         print("HomeViewController-viewDidLoad()")
         profileImage.layer.cornerRadius = profileImage.frame.height / 2
     }
+    func onChangeProfileImage (){
+        print("HomeViewControllerController-onChangeProfileImage() called")
+    }
 }

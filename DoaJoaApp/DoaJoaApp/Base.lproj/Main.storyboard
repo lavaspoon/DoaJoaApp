@@ -233,6 +233,9 @@
                                 </constraints>
                                 <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <state key="normal" title="프로필변경"/>
+                                <connections>
+                                    <action selector="onEditProfileBtnClicked:" destination="pzg-ha-bJu" eventType="touchUpInside" id="loQ-m3-pTE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obi-mP-hpm">
                                 <rect key="frame" x="20" y="108" width="50" height="30"/>
