@@ -9,8 +9,10 @@
 import UIKit
 
 class HomeViewControllerController : UIViewController {
+    @IBOutlet weak var profileImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("HomeViewController-viewDidLoad()")
+        profileImage.layer.cornerRadius = profileImage.frame.height / 2
     }
 }

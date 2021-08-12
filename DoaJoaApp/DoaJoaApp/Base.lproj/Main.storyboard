@@ -162,14 +162,43 @@
                     <view key="view" contentMode="scaleToFill" id="Q7L-Us-JDk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="agF-CE-JEJ">
+                                <rect key="frame" x="147" y="388.5" width="120" height="119"/>
+                                <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="fn5-hH-20O"/>
+                                    <constraint firstAttribute="height" constant="120" id="kaS-pa-kNY"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7f-xa-AuG">
+                                <rect key="frame" x="344" y="108" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Bj0-rt-NiL"/>
+                                </constraints>
+                                <state key="normal" title="Edit"/>
+                                <connections>
+                                    <segue destination="pzg-ha-bJu" kind="show" id="PjB-z1-c5K"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="agF-CE-JEJ" firstAttribute="centerY" secondItem="Q7L-Us-JDk" secondAttribute="centerY" id="Kwg-ZE-Qhj"/>
+                            <constraint firstItem="agF-CE-JEJ" firstAttribute="centerX" secondItem="Q7L-Us-JDk" secondAttribute="centerX" id="b4K-Pc-EZ2"/>
+                            <constraint firstItem="5th-iT-luY" firstAttribute="trailing" secondItem="C7f-xa-AuG" secondAttribute="trailing" constant="20" id="kc4-fF-JXc"/>
+                            <constraint firstItem="C7f-xa-AuG" firstAttribute="top" secondItem="5th-iT-luY" secondAttribute="top" constant="20" id="xU4-eW-n4M"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5th-iT-luY"/>
                     </view>
                     <navigationItem key="navigationItem" id="4Pn-fk-doA"/>
+                    <connections>
+                        <outlet property="profileImage" destination="agF-CE-JEJ" id="1Mg-CD-O9w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTk-8u-Wh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="825"/>
+            <point key="canvasLocation" x="137.68115942028987" y="825"/>
         </scene>
         <!--Write View Controller-->
         <scene sceneID="GCz-LS-9eg">
@@ -178,14 +207,67 @@
                     <view key="view" contentMode="scaleToFill" id="gSD-Vp-oUY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SCu-S1-gaa">
+                                <rect key="frame" x="147" y="388.5" width="120" height="119"/>
+                                <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="dTk-yC-00Z"/>
+                                    <constraint firstAttribute="height" constant="120" id="uAP-0p-5bv"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F58-nM-bUl">
+                                <rect key="frame" x="344" y="108" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="f6o-BC-6PI"/>
+                                    <constraint firstAttribute="width" constant="50" id="ubt-Pm-acY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPc-kP-4nf">
+                                <rect key="frame" x="157" y="518" width="100" height="30"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="O6H-E7-bNb"/>
+                                </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <state key="normal" title="프로필변경"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obi-mP-hpm">
+                                <rect key="frame" x="20" y="108" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Twc-RV-uwM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="onBackBtnClicked:" destination="pzg-ha-bJu" eventType="touchUpInside" id="42e-8Q-xKp"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JPc-kP-4nf" firstAttribute="top" secondItem="SCu-S1-gaa" secondAttribute="bottom" constant="10" id="Ee4-0Y-syZ"/>
+                            <constraint firstItem="SCu-S1-gaa" firstAttribute="centerY" secondItem="gSD-Vp-oUY" secondAttribute="centerY" id="Fvi-0s-pgV"/>
+                            <constraint firstItem="F58-nM-bUl" firstAttribute="top" secondItem="LJO-SI-qLi" secondAttribute="top" constant="20" id="GPV-RV-31Q"/>
+                            <constraint firstItem="Obi-mP-hpm" firstAttribute="leading" secondItem="LJO-SI-qLi" secondAttribute="leading" constant="20" id="SLF-Ut-2Sb"/>
+                            <constraint firstItem="Obi-mP-hpm" firstAttribute="top" secondItem="LJO-SI-qLi" secondAttribute="top" constant="20" id="jwC-Na-RSF"/>
+                            <constraint firstItem="SCu-S1-gaa" firstAttribute="centerX" secondItem="gSD-Vp-oUY" secondAttribute="centerX" id="lwh-7l-t8r"/>
+                            <constraint firstItem="JPc-kP-4nf" firstAttribute="centerX" secondItem="gSD-Vp-oUY" secondAttribute="centerX" id="vbd-g0-5NN"/>
+                            <constraint firstItem="LJO-SI-qLi" firstAttribute="trailing" secondItem="F58-nM-bUl" secondAttribute="trailing" constant="20" id="x8L-rB-tn7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LJO-SI-qLi"/>
                     </view>
                     <navigationItem key="navigationItem" id="fD4-XU-WdG"/>
+                    <connections>
+                        <outlet property="gotoEditProfileBtn" destination="JPc-kP-4nf" id="pIA-aq-DAk"/>
+                        <outlet property="profileImage" destination="SCu-S1-gaa" id="mRm-ve-Djp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYG-NO-ulb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="883" y="825"/>
+            <point key="canvasLocation" x="882.60869565217399" y="825"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="kFs-Ry-jbY">
@@ -281,6 +363,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="testImage" width="218" height="182"/>
     </resources>
