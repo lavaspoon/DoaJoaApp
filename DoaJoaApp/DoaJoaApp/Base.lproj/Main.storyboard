@@ -163,14 +163,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="agF-CE-JEJ">
-                                <rect key="frame" x="147" y="388.5" width="120" height="119"/>
-                                <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="fn5-hH-20O"/>
-                                    <constraint firstAttribute="height" constant="120" id="kaS-pa-kNY"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7f-xa-AuG">
                                 <rect key="frame" x="344" y="108" width="50" height="30"/>
                                 <constraints>
@@ -181,20 +173,40 @@
                                     <segue destination="pzg-ha-bJu" kind="show" id="PjB-z1-c5K"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="rt8-fc-mOx">
+                                <rect key="frame" x="50" y="138" width="42" height="461.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCS-zy-WRb">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnW-Ro-Pfb">
+                                        <rect key="frame" x="0.0" y="220.5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoB-pK-SzS">
+                                        <rect key="frame" x="0.0" y="441" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="agF-CE-JEJ" firstAttribute="centerY" secondItem="Q7L-Us-JDk" secondAttribute="centerY" id="Kwg-ZE-Qhj"/>
-                            <constraint firstItem="agF-CE-JEJ" firstAttribute="centerX" secondItem="Q7L-Us-JDk" secondAttribute="centerX" id="b4K-Pc-EZ2"/>
+                            <constraint firstItem="rt8-fc-mOx" firstAttribute="leading" secondItem="5th-iT-luY" secondAttribute="leading" constant="50" id="C49-JH-5AB"/>
+                            <constraint firstItem="rt8-fc-mOx" firstAttribute="top" secondItem="5th-iT-luY" secondAttribute="top" constant="50" id="Hdg-1f-fS3"/>
                             <constraint firstItem="5th-iT-luY" firstAttribute="trailing" secondItem="C7f-xa-AuG" secondAttribute="trailing" constant="20" id="kc4-fF-JXc"/>
                             <constraint firstItem="C7f-xa-AuG" firstAttribute="top" secondItem="5th-iT-luY" secondAttribute="top" constant="20" id="xU4-eW-n4M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5th-iT-luY"/>
                     </view>
                     <navigationItem key="navigationItem" id="4Pn-fk-doA"/>
-                    <connections>
-                        <outlet property="profileImage" destination="agF-CE-JEJ" id="1Mg-CD-O9w"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTk-8u-Wh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
