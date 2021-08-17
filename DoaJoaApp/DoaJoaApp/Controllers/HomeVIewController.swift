@@ -18,6 +18,6 @@ class HomeViewControllerController : UIViewController {
     func onChangeProfileImage (){
         print("HomeViewControllerController-onChangeProfileImage() called")
     }
-    //스택뷰 라벨 설정
+    // 홈뷰 메서드 세팅
     
 }
