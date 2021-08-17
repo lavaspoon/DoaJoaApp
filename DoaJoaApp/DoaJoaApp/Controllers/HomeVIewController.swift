@@ -19,5 +19,5 @@ class HomeViewControllerController : UIViewController {
         print("HomeViewControllerController-onChangeProfileImage() called")
     }
     // 홈뷰 메서드 세팅
-        //test
+        //test123
 }
