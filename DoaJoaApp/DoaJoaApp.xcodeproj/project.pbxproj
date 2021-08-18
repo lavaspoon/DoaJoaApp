@@ -21,6 +21,7 @@
 		9E06622326B0052200547323 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06622226B0052200547323 /* RegisterViewController.swift */; };
 		9EB8D72226C56DC4003CBEAE /* HomeVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8D72126C56DC4003CBEAE /* HomeVIewController.swift */; };
 		9EB8D72426C56F0E003CBEAE /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8D72326C56F0E003CBEAE /* WriteViewController.swift */; };
+		9EC77CA026CD4A0700373005 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC77C9F26CD4A0700373005 /* CircleButton.swift */; };
 		9EC9B8A526C034EB0007ED2C /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC9B8A426C034EB0007ED2C /* WebView.storyboard */; };
 		9EC9B8A726C035AE0007ED2C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC9B8A626C035AE0007ED2C /* WebViewController.swift */; };
 		9ECA4D8A26B1999A00341A22 /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ECA4D8926B1999A00341A22 /* PopUp.storyboard */; };
@@ -71,6 +72,7 @@
 		9E06622226B0052200547323 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9EB8D72126C56DC4003CBEAE /* HomeVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVIewController.swift; sourceTree = "<group>"; };
 		9EB8D72326C56F0E003CBEAE /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		9EC77C9F26CD4A0700373005 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		9EC9B8A426C034EB0007ED2C /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
 		9EC9B8A626C035AE0007ED2C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		9ECA4D8926B1999A00341A22 /* PopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				9E0661F726AD017200547323 /* Assets.xcassets */,
 				9E0661F926AD017200547323 /* LaunchScreen.storyboard */,
 				9E0661FC26AD017200547323 /* Info.plist */,
+				9EC77C9F26CD4A0700373005 /* CircleButton.swift */,
 			);
 			path = DoaJoaApp;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				9ECCB17F26BD806000BDECD2 /* PopUpDelegate.swift in Sources */,
 				9E0661EF26AD016D00547323 /* AppDelegate.swift in Sources */,
 				9EB8D72226C56DC4003CBEAE /* HomeVIewController.swift in Sources */,
+				9EC77CA026CD4A0700373005 /* CircleButton.swift in Sources */,
 				9E0661F126AD016D00547323 /* SceneDelegate.swift in Sources */,
 				9EC9B8A726C035AE0007ED2C /* WebViewController.swift in Sources */,
 				9E06622326B0052200547323 /* RegisterViewController.swift in Sources */,

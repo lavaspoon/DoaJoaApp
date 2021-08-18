@@ -9,15 +9,10 @@
 import UIKit
 
 class HomeViewControllerController : UIViewController {
-    @IBOutlet weak var profileImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("HomeViewController-viewDidLoad()")
-        profileImage.layer.cornerRadius = profileImage.frame.height / 2
-    }
+        print("HomeViewController-viewDidLoad()")    }
     func onChangeProfileImage (){
         print("HomeViewControllerController-onChangeProfileImage() called")
     }
-    // 홈뷰 메서드 세팅
-        //test123
 }
