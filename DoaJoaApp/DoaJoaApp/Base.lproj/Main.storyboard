@@ -163,6 +163,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4U-4e-zMk">
+                                <rect key="frame" x="20" y="108" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Fru-lk-vgc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="onBackBtnClicked:" destination="rdg-nF-InF" eventType="touchUpInside" id="3xr-8x-5cl"/>
+                                    <action selector="onBackBtnClicked:" destination="pzg-ha-bJu" eventType="touchUpInside" id="H5e-EN-afQ"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7f-xa-AuG">
                                 <rect key="frame" x="344" y="108" width="50" height="30"/>
                                 <constraints>
@@ -170,7 +182,7 @@
                                 </constraints>
                                 <state key="normal" title="Edit"/>
                                 <connections>
-                                    <segue destination="pzg-ha-bJu" kind="show" id="PjB-z1-c5K"/>
+                                    <action selector="oneditProfileBtnClicked:" destination="rdg-nF-InF" eventType="touchUpInside" id="sR3-Za-dvz"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vtN-1v-ehL">
@@ -345,7 +357,9 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="U4U-4e-zMk" firstAttribute="top" secondItem="5th-iT-luY" secondAttribute="top" constant="20" id="DGF-7e-Ksk"/>
                             <constraint firstItem="fdc-d5-czb" firstAttribute="leading" secondItem="vtN-1v-ehL" secondAttribute="leading" id="DXz-bB-GaN"/>
+                            <constraint firstItem="U4U-4e-zMk" firstAttribute="leading" secondItem="5th-iT-luY" secondAttribute="leading" constant="20" id="HbB-Ft-ETZ"/>
                             <constraint firstItem="vtN-1v-ehL" firstAttribute="centerX" secondItem="Q7L-Us-JDk" secondAttribute="centerX" id="apM-Gd-USb"/>
                             <constraint firstItem="fdc-d5-czb" firstAttribute="trailing" secondItem="vtN-1v-ehL" secondAttribute="trailing" id="hhm-B3-XMp"/>
                             <constraint firstItem="5th-iT-luY" firstAttribute="trailing" secondItem="C7f-xa-AuG" secondAttribute="trailing" constant="20" id="kc4-fF-JXc"/>
@@ -358,6 +372,7 @@
                     <navigationItem key="navigationItem" id="4Pn-fk-doA"/>
                     <connections>
                         <outlet property="firstItemBtn" destination="ETN-gI-1eL" id="Yjs-9E-kYw"/>
+                        <outlet property="profileImageView" destination="1AV-bM-B8c" id="PkA-Fr-dmp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTk-8u-Wh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -381,7 +396,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F58-nM-bUl">
-                                <rect key="frame" x="344" y="108" width="50" height="30"/>
+                                <rect key="frame" x="344" y="64" width="50" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="f6o-BC-6PI"/>
                                     <constraint firstAttribute="width" constant="50" id="ubt-Pm-acY"/>
@@ -402,7 +417,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obi-mP-hpm">
-                                <rect key="frame" x="20" y="108" width="50" height="30"/>
+                                <rect key="frame" x="20" y="64" width="50" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Twc-RV-uwM"/>
                                 </constraints>
