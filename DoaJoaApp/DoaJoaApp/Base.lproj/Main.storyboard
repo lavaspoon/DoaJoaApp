@@ -195,6 +195,9 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onfirstItemBtnClicked:" destination="rdg-nF-InF" eventType="touchUpInside" id="UhK-if-aZm"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40A-0z-irv" customClass="CirCleButton" customModule="DoaJoaApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="110" width="80" height="80"/>
@@ -353,6 +356,9 @@
                         <viewLayoutGuide key="safeArea" id="5th-iT-luY"/>
                     </view>
                     <navigationItem key="navigationItem" id="4Pn-fk-doA"/>
+                    <connections>
+                        <outlet property="firstItemBtn" destination="ETN-gI-1eL" id="Yjs-9E-kYw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTk-8u-Wh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
