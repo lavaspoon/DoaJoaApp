@@ -207,9 +207,6 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="onfirstItemBtnClicked:" destination="rdg-nF-InF" eventType="touchUpInside" id="UhK-if-aZm"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40A-0z-irv" customClass="CirCleButton" customModule="DoaJoaApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="110" width="80" height="80"/>
@@ -219,7 +216,7 @@
                                                     <constraint firstAttribute="width" constant="80" id="pde-i0-V2h"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal" title="4">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -236,7 +233,7 @@
                                                     <constraint firstAttribute="width" constant="80" id="qeG-6X-uQ7"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal" title="6">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -258,7 +255,7 @@
                                                     <constraint firstAttribute="height" constant="80" id="yJh-C4-9q0"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal" title="2">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -279,7 +276,7 @@
                                                     <constraint firstAttribute="width" constant="80" id="m2n-B6-YHN"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal" title="7">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -301,7 +298,7 @@
                                                     <constraint firstAttribute="height" constant="80" id="grC-u3-uIY"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal" title="3">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -318,7 +315,7 @@
                                                     <constraint firstAttribute="width" constant="80" id="dEn-eU-qvR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal" title="5">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -335,7 +332,7 @@
                                                     <constraint firstAttribute="height" constant="80" id="lsD-Oe-GGG"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal" title="8">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -348,10 +345,10 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="도아조아를 방문해주세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fdc-d5-czb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="버튼을 클릭해주세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fdc-d5-czb">
                                 <rect key="frame" x="77" y="214" width="260" height="64"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -371,8 +368,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="4Pn-fk-doA"/>
                     <connections>
-                        <outlet property="firstItemBtn" destination="ETN-gI-1eL" id="Yjs-9E-kYw"/>
                         <outlet property="profileImageView" destination="1AV-bM-B8c" id="PkA-Fr-dmp"/>
+                        <outlet property="showFieldLabel" destination="fdc-d5-czb" id="lj2-IE-d6r"/>
+                        <outletCollection property="itemBtns" destination="ETN-gI-1eL" collectionClass="NSMutableArray" id="J3B-uL-F3c"/>
+                        <outletCollection property="itemBtns" destination="cGw-zL-UaF" collectionClass="NSMutableArray" id="dt9-kq-KmH"/>
+                        <outletCollection property="itemBtns" destination="TXP-ll-TNB" collectionClass="NSMutableArray" id="ULg-WS-N2F"/>
+                        <outletCollection property="itemBtns" destination="40A-0z-irv" collectionClass="NSMutableArray" id="faf-nq-YSo"/>
+                        <outletCollection property="itemBtns" destination="fy3-dm-ZNa" collectionClass="NSMutableArray" id="RJx-gf-KDC"/>
+                        <outletCollection property="itemBtns" destination="gP8-TZ-Icj" collectionClass="NSMutableArray" id="TSO-Bn-bRd"/>
+                        <outletCollection property="itemBtns" destination="Sj1-PV-QSm" collectionClass="NSMutableArray" id="nww-Fz-eu0"/>
+                        <outletCollection property="itemBtns" destination="l9F-1H-KzV" collectionClass="NSMutableArray" id="GrA-fz-TAC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTk-8u-Wh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
