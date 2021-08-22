@@ -28,6 +28,7 @@
 		9ECA4D8C26B1ADC800341A22 /* CustomPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECA4D8B26B1ADC800341A22 /* CustomPopUpViewController.swift */; };
 		9ECA4D8E26B9441000341A22 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECA4D8D26B9441000341A22 /* WebKit.framework */; };
 		9ECCB17F26BD806000BDECD2 /* PopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECCB17E26BD806000BDECD2 /* PopUpDelegate.swift */; };
+		9EDCB82D26D2925800D1B3F5 /* TableVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCB82C26D2925800D1B3F5 /* TableVIewController.swift */; };
 		D1B2976A3919C4F0B5058B7E /* Pods_DoaJoaApp_DoaJoaAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94966889D0E467FCB90DFAE /* Pods_DoaJoaApp_DoaJoaAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		9ECA4D8B26B1ADC800341A22 /* CustomPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopUpViewController.swift; sourceTree = "<group>"; };
 		9ECA4D8D26B9441000341A22 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		9ECCB17E26BD806000BDECD2 /* PopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpDelegate.swift; sourceTree = "<group>"; };
+		9EDCB82C26D2925800D1B3F5 /* TableVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVIewController.swift; sourceTree = "<group>"; };
 		C94966889D0E467FCB90DFAE /* Pods_DoaJoaApp_DoaJoaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoaJoaApp_DoaJoaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96864E8EA1D804B05F34D2C /* Pods-DoaJoaApp-DoaJoaAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoaJoaApp-DoaJoaAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-DoaJoaApp-DoaJoaAppUITests/Pods-DoaJoaApp-DoaJoaAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D6F36F5E194BFCB46B841D79 /* Pods-DoaJoaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoaJoaApp.release.xcconfig"; path = "Target Support Files/Pods-DoaJoaApp/Pods-DoaJoaApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				9EC9B8A626C035AE0007ED2C /* WebViewController.swift */,
 				9EB8D72126C56DC4003CBEAE /* HomeVIewController.swift */,
 				9EB8D72326C56F0E003CBEAE /* WriteViewController.swift */,
+				9EDCB82C26D2925800D1B3F5 /* TableVIewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				9E0661F126AD016D00547323 /* SceneDelegate.swift in Sources */,
 				9EC9B8A726C035AE0007ED2C /* WebViewController.swift in Sources */,
 				9E06622326B0052200547323 /* RegisterViewController.swift in Sources */,
+				9EDCB82D26D2925800D1B3F5 /* TableVIewController.swift in Sources */,
 				9ECA4D8C26B1ADC800341A22 /* CustomPopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

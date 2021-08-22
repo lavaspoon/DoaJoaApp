@@ -107,6 +107,17 @@
                                             <segue destination="rdg-nF-InF" kind="show" id="dKS-bY-T2R"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9u1-RS-XLI">
+                                        <rect key="frame" x="297" y="400" width="60" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="rpB-HG-fwg"/>
+                                            <constraint firstAttribute="width" constant="60" id="xKh-2M-fSs"/>
+                                        </constraints>
+                                        <state key="normal" title="테이블뷰">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -121,8 +132,10 @@
                                     <constraint firstItem="JWV-P2-RFg" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="NCV-Zy-JfI"/>
                                     <constraint firstItem="h0c-Ph-sEF" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="P4E-ql-soT"/>
                                     <constraint firstItem="F3z-9M-Vg2" firstAttribute="top" secondItem="L8x-Uu-JPb" secondAttribute="top" constant="80" id="bqr-q2-Gd8"/>
+                                    <constraint firstItem="9u1-RS-XLI" firstAttribute="leading" secondItem="fEA-Wd-JV6" secondAttribute="trailing" constant="30" id="kHv-3H-wIu"/>
                                     <constraint firstItem="ixi-JR-KBG" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="l8u-Gz-bDU"/>
                                     <constraint firstAttribute="bottom" secondItem="h0c-Ph-sEF" secondAttribute="bottom" constant="20" id="oZO-Zi-Fsu"/>
+                                    <constraint firstItem="9u1-RS-XLI" firstAttribute="top" secondItem="L8x-Uu-JPb" secondAttribute="top" constant="400" id="pm4-ba-Y6x"/>
                                     <constraint firstItem="uDf-rt-uuI" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="rvS-WE-qhf"/>
                                 </constraints>
                             </view>
