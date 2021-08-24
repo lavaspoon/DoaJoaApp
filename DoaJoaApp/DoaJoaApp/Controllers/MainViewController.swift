@@ -114,5 +114,8 @@ class MainViewController: UIViewController, PopUpDelegate {
     @IBAction func onDoaBtnClicked(_ sender: UIButton) {
         print("MainViewController-onDoaBtnClicked()")
     }
+    @IBAction func onTableBtnClicked(_ sender: UIButton) {
+        print("MainViewController-onTableBtnClicked()")
+    }
 }
 

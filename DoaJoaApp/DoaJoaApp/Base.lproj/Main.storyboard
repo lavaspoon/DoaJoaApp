@@ -23,6 +23,22 @@
             </objects>
             <point key="canvasLocation" x="-696" y="127"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="D1s-B3-8Ti">
+            <objects>
+                <viewController id="5so-fu-8Jk" customClass="TableViewController" customModule="DoaJoaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Crz-Th-nIj" customClass="TableVIew">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Djt-03-Y6N"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v52-aI-Ec2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfc-cL-6J3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="-564"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -117,6 +133,9 @@
                                         <state key="normal" title="테이블뷰">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onTableBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d5u-fn-reR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -162,6 +181,7 @@
                         <outlet property="myWebView" destination="ws8-At-Cj2" id="m5d-rr-Qhu"/>
                         <outlet property="profileImage" destination="F3z-9M-Vg2" id="suX-cH-ror"/>
                         <outlet property="testLabel" destination="RaA-sK-G4L" id="K5v-dH-FbW"/>
+                        <segue destination="5so-fu-8Jk" kind="show" id="0Mr-xF-mVU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
