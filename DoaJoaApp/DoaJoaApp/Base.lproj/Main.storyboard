@@ -135,6 +135,7 @@
                                         </state>
                                         <connections>
                                             <action selector="onTableBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d5u-fn-reR"/>
+                                            <segue destination="5so-fu-8Jk" kind="show" id="LSB-iV-AZY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -181,7 +182,6 @@
                         <outlet property="myWebView" destination="ws8-At-Cj2" id="m5d-rr-Qhu"/>
                         <outlet property="profileImage" destination="F3z-9M-Vg2" id="suX-cH-ror"/>
                         <outlet property="testLabel" destination="RaA-sK-G4L" id="K5v-dH-FbW"/>
-                        <segue destination="5so-fu-8Jk" kind="show" id="0Mr-xF-mVU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
