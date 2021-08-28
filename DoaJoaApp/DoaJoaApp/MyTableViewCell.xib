@@ -39,13 +39,22 @@
                             </label>
                         </subviews>
                     </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="orem Ipsum is simp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5N-RV-6TC">
+                        <rect key="frame" x="8" y="66" width="148" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="wbj-D2-Fg2" firstAttribute="top" secondItem="mwl-ki-D3r" secondAttribute="top" id="1Jt-Ux-qdX"/>
                     <constraint firstItem="mwl-ki-D3r" firstAttribute="top" secondItem="pgW-15-NSy" secondAttribute="top" constant="8" id="2NQ-nS-qaS"/>
+                    <constraint firstItem="A5N-RV-6TC" firstAttribute="leading" secondItem="mwl-ki-D3r" secondAttribute="leading" id="4gD-7n-ejc"/>
                     <constraint firstItem="wbj-D2-Fg2" firstAttribute="height" secondItem="mwl-ki-D3r" secondAttribute="height" id="TbI-eh-DJh"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="A5N-RV-6TC" secondAttribute="trailing" constant="8" id="YXG-Sq-Jb6"/>
                     <constraint firstItem="wbj-D2-Fg2" firstAttribute="leading" secondItem="mwl-ki-D3r" secondAttribute="trailing" constant="8" id="blL-fr-K9Q"/>
                     <constraint firstItem="mwl-ki-D3r" firstAttribute="leading" secondItem="pgW-15-NSy" secondAttribute="leading" constant="8" id="cWD-wW-XsR"/>
+                    <constraint firstItem="A5N-RV-6TC" firstAttribute="top" secondItem="mwl-ki-D3r" secondAttribute="bottom" constant="8" id="xbt-8d-M0G"/>
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="0.0" y="138.95089285714286"/>
