@@ -39,21 +39,55 @@
                             </label>
                         </subviews>
                     </stackView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="orem Ipsum is simp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5N-RV-6TC">
-                        <rect key="frame" x="8" y="66" width="148" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5N-RV-6TC">
+                        <rect key="frame" x="8" y="66" width="387.5" height="82"/>
+                        <string key="text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Xh7-oD-Am2">
+                        <rect key="frame" x="8" y="156" width="70" height="20"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9T-rC-IGU">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Gsk-It-plS"/>
+                                    <constraint firstAttribute="width" constant="20" id="QSn-FT-QRP"/>
+                                </constraints>
+                                <state key="normal" image="heart" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqm-nh-ovy">
+                                <rect key="frame" x="25" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="lYE-eJ-CxE"/>
+                                    <constraint firstAttribute="height" constant="20" id="tNK-33-Soh"/>
+                                </constraints>
+                                <state key="normal" image="hand.thumbsup" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9P-ej-KQh">
+                                <rect key="frame" x="50" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="3wP-wn-LtA"/>
+                                    <constraint firstAttribute="width" constant="20" id="maQ-RJ-aNo"/>
+                                </constraints>
+                                <state key="normal" image="arrowshape.turn.up.right" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </stackView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="wbj-D2-Fg2" firstAttribute="top" secondItem="mwl-ki-D3r" secondAttribute="top" id="1Jt-Ux-qdX"/>
                     <constraint firstItem="mwl-ki-D3r" firstAttribute="top" secondItem="pgW-15-NSy" secondAttribute="top" constant="8" id="2NQ-nS-qaS"/>
                     <constraint firstItem="A5N-RV-6TC" firstAttribute="leading" secondItem="mwl-ki-D3r" secondAttribute="leading" id="4gD-7n-ejc"/>
+                    <constraint firstItem="Xh7-oD-Am2" firstAttribute="leading" secondItem="A5N-RV-6TC" secondAttribute="leading" id="E5Y-5f-Wev"/>
+                    <constraint firstAttribute="bottom" secondItem="Xh7-oD-Am2" secondAttribute="bottom" constant="15" id="RFb-od-VA0"/>
                     <constraint firstItem="wbj-D2-Fg2" firstAttribute="height" secondItem="mwl-ki-D3r" secondAttribute="height" id="TbI-eh-DJh"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="A5N-RV-6TC" secondAttribute="trailing" constant="8" id="YXG-Sq-Jb6"/>
                     <constraint firstItem="wbj-D2-Fg2" firstAttribute="leading" secondItem="mwl-ki-D3r" secondAttribute="trailing" constant="8" id="blL-fr-K9Q"/>
                     <constraint firstItem="mwl-ki-D3r" firstAttribute="leading" secondItem="pgW-15-NSy" secondAttribute="leading" constant="8" id="cWD-wW-XsR"/>
+                    <constraint firstItem="Xh7-oD-Am2" firstAttribute="top" secondItem="A5N-RV-6TC" secondAttribute="bottom" constant="8" id="i3J-qA-CbD"/>
                     <constraint firstItem="A5N-RV-6TC" firstAttribute="top" secondItem="mwl-ki-D3r" secondAttribute="bottom" constant="8" id="xbt-8d-M0G"/>
                 </constraints>
             </tableViewCellContentView>
@@ -61,6 +95,9 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
+        <image name="hand.thumbsup" catalog="system" width="128" height="128"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="my_image" width="249" height="284"/>
     </resources>
 </document>
