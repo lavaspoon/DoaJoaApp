@@ -19,6 +19,7 @@
 		9E06621126AD017200547323 /* DoaJoaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06621026AD017200547323 /* DoaJoaAppUITests.swift */; };
 		9E06622026AF06D900547323 /* 70366-blender-edit.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E06621F26AF06D900547323 /* 70366-blender-edit.json */; };
 		9E06622326B0052200547323 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06622226B0052200547323 /* RegisterViewController.swift */; };
+		9E44226C26DD296800C3DBE8 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E44226B26DD296800C3DBE8 /* MyTableViewCell.swift */; };
 		9EB8D72226C56DC4003CBEAE /* HomeVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8D72126C56DC4003CBEAE /* HomeVIewController.swift */; };
 		9EB8D72426C56F0E003CBEAE /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8D72326C56F0E003CBEAE /* WriteViewController.swift */; };
 		9EBD7C3D26DA6E970014361D /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EBD7C3C26DA6E970014361D /* MyTableViewCell.xib */; };
@@ -72,6 +73,7 @@
 		9E06621226AD017200547323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E06621F26AF06D900547323 /* 70366-blender-edit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "70366-blender-edit.json"; sourceTree = "<group>"; };
 		9E06622226B0052200547323 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9E44226B26DD296800C3DBE8 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		9EB8D72126C56DC4003CBEAE /* HomeVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVIewController.swift; sourceTree = "<group>"; };
 		9EB8D72326C56F0E003CBEAE /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		9EBD7C3C26DA6E970014361D /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		9E0661E226AD016C00547323 = {
 			isa = PBXGroup;
 			children = (
+				9E44226B26DD296800C3DBE8 /* MyTableViewCell.swift */,
 				9E0661ED26AD016D00547323 /* DoaJoaApp */,
 				9E06620426AD017200547323 /* DoaJoaAppTests */,
 				9E06620F26AD017200547323 /* DoaJoaAppUITests */,
@@ -472,6 +475,7 @@
 				9ECCB17F26BD806000BDECD2 /* PopUpDelegate.swift in Sources */,
 				9E0661EF26AD016D00547323 /* AppDelegate.swift in Sources */,
 				9EB8D72226C56DC4003CBEAE /* HomeVIewController.swift in Sources */,
+				9E44226C26DD296800C3DBE8 /* MyTableViewCell.swift in Sources */,
 				9EC77CA026CD4A0700373005 /* CircleButton.swift in Sources */,
 				9E0661F126AD016D00547323 /* SceneDelegate.swift in Sources */,
 				9EC9B8A726C035AE0007ED2C /* WebViewController.swift in Sources */,
