@@ -23,6 +23,16 @@ class TableViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("TableViewController-viewDidLoad()")
+        
+        //셀의 리소스 파일 가져오기
+        let MyTableViewCellNib = UINib(nibName: "MyTableViewCell", bundle: nil)
+        //셀에 가져온 리소스 등록
+        self.myTableView.register(MyTableViewCellNib, forCellReuseIdentifier: "myTableViewCell")
+        self.myTableView.rowHeight = UITableView.automaticDimension
+        self.myTableView.estimatedRowHeight = 120
+        //중요!
+        self.myTableView.delegate = self
+        self.myTableView.dataSource = self
     }
 }
 //위의 뷰 컨트롤러에서 한꺼번에 다 보면 소스가 지저분해지니 extension으로 나눈다.
@@ -33,10 +43,12 @@ extension TableViewController : UITableViewDelegate {
 extension TableViewController : UITableViewDataSource{
     //테이블 뷰 셀의 갯수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return self.contentArray.count
     }
-    
+    //각 셀에대한 설정
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = myTableView.dequeueReusableCell(withIdentifier: "myTableViewCell", for: indexPath) as! MyTableViewCell
+        cell.userContentLabel.text = contentArray[indexPath.row]
+        return cell
     }
 }
