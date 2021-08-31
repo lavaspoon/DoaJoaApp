@@ -147,7 +147,6 @@
 		9E0661E226AD016C00547323 = {
 			isa = PBXGroup;
 			children = (
-				9E44226B26DD296800C3DBE8 /* MyTableViewCell.swift */,
 				9E0661ED26AD016D00547323 /* DoaJoaApp */,
 				9E06620426AD017200547323 /* DoaJoaAppTests */,
 				9E06620F26AD017200547323 /* DoaJoaAppUITests */,
@@ -175,6 +174,7 @@
 				9E06621E26AD30C900547323 /* ViewControllers */,
 				9E0661EE26AD016D00547323 /* AppDelegate.swift */,
 				9E0661F026AD016D00547323 /* SceneDelegate.swift */,
+				9E44226B26DD296800C3DBE8 /* MyTableViewCell.swift */,
 				9EC9B8A426C034EB0007ED2C /* WebView.storyboard */,
 				9ECA4D8926B1999A00341A22 /* PopUp.storyboard */,
 				9E0661F426AD016D00547323 /* Main.storyboard */,

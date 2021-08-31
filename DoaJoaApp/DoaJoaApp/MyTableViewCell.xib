@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="191" id="EWK-Ov-4NM">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="191" id="EWK-Ov-4NM" customClass="MyTableViewCell" customModule="DoaJoaApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="191"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EWK-Ov-4NM" id="pgW-15-NSy">
@@ -91,6 +91,10 @@
                     <constraint firstItem="A5N-RV-6TC" firstAttribute="top" secondItem="mwl-ki-D3r" secondAttribute="bottom" constant="8" id="xbt-8d-M0G"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="userContentLabel" destination="A5N-RV-6TC" id="m2Q-HG-azU"/>
+                <outlet property="userProfileImg" destination="mwl-ki-D3r" id="AUZ-lp-aVg"/>
+            </connections>
             <point key="canvasLocation" x="0.0" y="138.95089285714286"/>
         </tableViewCell>
     </objects>
