@@ -23,10 +23,13 @@ class TableViewController : UIViewController {
         "ots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock"
         
     ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("TableViewController-viewDidLoad()")
         
+        //MARK: Cell Load
+        //https://zeddios.tistory.com/297
         //셀의 리소스 파일 가져오기
         let MyTableViewCellNib = UINib(nibName: "MyTableViewCell", bundle: nil)
         //셀에 가져온 리소스 등록
