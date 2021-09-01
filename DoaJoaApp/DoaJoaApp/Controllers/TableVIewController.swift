@@ -28,15 +28,18 @@ class TableViewController : UIViewController {
         super.viewDidLoad()
         print("TableViewController-viewDidLoad()")
         
-        //MARK: Cell Load
+        //MARK: Cell Load - MyTableViewCell Class
         //https://zeddios.tistory.com/297
         //셀의 리소스 파일 가져오기
         let MyTableViewCellNib = UINib(nibName: "MyTableViewCell", bundle: nil)
         //셀에 가져온 리소스 등록
         self.myTableView.register(MyTableViewCellNib, forCellReuseIdentifier: "myTableViewCell")
+        
+        
         self.myTableView.rowHeight = UITableView.automaticDimension
         self.myTableView.estimatedRowHeight = 120
-        //중요!
+        
+        //중요한 작업. 대리자 위임
         self.myTableView.delegate = self
         self.myTableView.dataSource = self
     }
