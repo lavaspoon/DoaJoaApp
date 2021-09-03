@@ -23,6 +23,7 @@
 		9EB8D72226C56DC4003CBEAE /* HomeVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8D72126C56DC4003CBEAE /* HomeVIewController.swift */; };
 		9EB8D72426C56F0E003CBEAE /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8D72326C56F0E003CBEAE /* WriteViewController.swift */; };
 		9EBD7C3D26DA6E970014361D /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EBD7C3C26DA6E970014361D /* MyTableViewCell.xib */; };
+		9EC2AA7E26E25B9100F53204 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC2AA7D26E25B9100F53204 /* ProjectViewController.swift */; };
 		9EC77CA026CD4A0700373005 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC77C9F26CD4A0700373005 /* CircleButton.swift */; };
 		9EC9B8A526C034EB0007ED2C /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC9B8A426C034EB0007ED2C /* WebView.storyboard */; };
 		9EC9B8A726C035AE0007ED2C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC9B8A626C035AE0007ED2C /* WebViewController.swift */; };
@@ -77,6 +78,7 @@
 		9EB8D72126C56DC4003CBEAE /* HomeVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVIewController.swift; sourceTree = "<group>"; };
 		9EB8D72326C56F0E003CBEAE /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		9EBD7C3C26DA6E970014361D /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		9EC2AA7D26E25B9100F53204 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		9EC77C9F26CD4A0700373005 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		9EC9B8A426C034EB0007ED2C /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
 		9EC9B8A626C035AE0007ED2C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				9EB8D72126C56DC4003CBEAE /* HomeVIewController.swift */,
 				9EB8D72326C56F0E003CBEAE /* WriteViewController.swift */,
 				9EDCB82C26D2925800D1B3F5 /* TableVIewController.swift */,
+				9EC2AA7D26E25B9100F53204 /* ProjectViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				9EB8D72426C56F0E003CBEAE /* WriteViewController.swift in Sources */,
 				9E0661F326AD016D00547323 /* MainViewController.swift in Sources */,
 				9ECCB17F26BD806000BDECD2 /* PopUpDelegate.swift in Sources */,
+				9EC2AA7E26E25B9100F53204 /* ProjectViewController.swift in Sources */,
 				9E0661EF26AD016D00547323 /* AppDelegate.swift in Sources */,
 				9EB8D72226C56DC4003CBEAE /* HomeVIewController.swift in Sources */,
 				9E44226C26DD296800C3DBE8 /* MyTableViewCell.swift in Sources */,
