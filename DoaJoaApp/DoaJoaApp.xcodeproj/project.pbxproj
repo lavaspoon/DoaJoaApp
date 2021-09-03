@@ -24,6 +24,8 @@
 		9EB8D72426C56F0E003CBEAE /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8D72326C56F0E003CBEAE /* WriteViewController.swift */; };
 		9EBD7C3D26DA6E970014361D /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EBD7C3C26DA6E970014361D /* MyTableViewCell.xib */; };
 		9EC2AA7E26E25B9100F53204 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC2AA7D26E25B9100F53204 /* ProjectViewController.swift */; };
+		9EC2AA8226E274FC00F53204 /* NanumBarunpenR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EC2AA8026E274FC00F53204 /* NanumBarunpenR.ttf */; };
+		9EC2AA8326E274FC00F53204 /* NanumBarunpenB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EC2AA8126E274FC00F53204 /* NanumBarunpenB.ttf */; };
 		9EC77CA026CD4A0700373005 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC77C9F26CD4A0700373005 /* CircleButton.swift */; };
 		9EC9B8A526C034EB0007ED2C /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC9B8A426C034EB0007ED2C /* WebView.storyboard */; };
 		9EC9B8A726C035AE0007ED2C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC9B8A626C035AE0007ED2C /* WebViewController.swift */; };
@@ -79,6 +81,8 @@
 		9EB8D72326C56F0E003CBEAE /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		9EBD7C3C26DA6E970014361D /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		9EC2AA7D26E25B9100F53204 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		9EC2AA8026E274FC00F53204 /* NanumBarunpenR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenR.ttf; sourceTree = "<group>"; };
+		9EC2AA8126E274FC00F53204 /* NanumBarunpenB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenB.ttf; sourceTree = "<group>"; };
 		9EC77C9F26CD4A0700373005 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		9EC9B8A426C034EB0007ED2C /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
 		9EC9B8A626C035AE0007ED2C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 		9E0661ED26AD016D00547323 /* DoaJoaApp */ = {
 			isa = PBXGroup;
 			children = (
+				9EC2AA7F26E2749500F53204 /* Fonts */,
 				9E06621F26AF06D900547323 /* 70366-blender-edit.json */,
 				9E06622126B004E900547323 /* Controllers */,
 				9E06621E26AD30C900547323 /* ViewControllers */,
@@ -228,6 +233,15 @@
 				9EC2AA7D26E25B9100F53204 /* ProjectViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9EC2AA7F26E2749500F53204 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9EC2AA8126E274FC00F53204 /* NanumBarunpenB.ttf */,
+				9EC2AA8026E274FC00F53204 /* NanumBarunpenR.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +355,8 @@
 			files = (
 				9E0661FB26AD017200547323 /* LaunchScreen.storyboard in Resources */,
 				9E06622026AF06D900547323 /* 70366-blender-edit.json in Resources */,
+				9EC2AA8326E274FC00F53204 /* NanumBarunpenB.ttf in Resources */,
+				9EC2AA8226E274FC00F53204 /* NanumBarunpenR.ttf in Resources */,
 				9E0661F826AD017200547323 /* Assets.xcassets in Resources */,
 				9E0661F626AD016D00547323 /* Main.storyboard in Resources */,
 				9EC9B8A526C034EB0007ED2C /* WebView.storyboard in Resources */,
