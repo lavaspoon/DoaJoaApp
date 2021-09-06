@@ -278,15 +278,40 @@
                                     <constraint firstItem="ftJ-5w-arb" firstAttribute="leading" secondItem="Yea-Vu-eAL" secondAttribute="leading" id="fSC-8h-f9H"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pLt-8E-CwS" userLabel="하단 스택뷰">
+                                <rect key="frame" x="20" y="463.5" width="335" height="25.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="밤잠: 8시간" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCf-Rd-fNo" userLabel="Sleep Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="233.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunpen" family="NanumBarunpen" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수유: 1000ml" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3n-uD-cBE" userLabel="Drink Label">
+                                        <rect key="frame" x="241.5" y="0.0" width="93.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunpen" family="NanumBarunpen" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="e3n-uD-cBE" secondAttribute="trailing" id="DVE-5o-fK9"/>
+                                    <constraint firstItem="XCf-Rd-fNo" firstAttribute="leading" secondItem="pLt-8E-CwS" secondAttribute="leading" id="rRj-y9-bVG"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.90429096936316611" blue="0.80230017037499668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Yea-Vu-eAL" firstAttribute="centerX" secondItem="CsN-oc-uEV" secondAttribute="centerX" id="01d-TH-4pD"/>
                             <constraint firstItem="CfS-ic-yuH" firstAttribute="top" secondItem="h8H-qs-30v" secondAttribute="top" constant="10" id="5Tq-S8-12b"/>
                             <constraint firstItem="Yea-Vu-eAL" firstAttribute="top" secondItem="L4b-r5-17T" secondAttribute="bottom" constant="79" id="Cgc-Fp-Js1"/>
+                            <constraint firstItem="pLt-8E-CwS" firstAttribute="leading" secondItem="h8H-qs-30v" secondAttribute="leading" constant="20" id="NtY-hA-u38"/>
                             <constraint firstItem="L4b-r5-17T" firstAttribute="centerX" secondItem="CsN-oc-uEV" secondAttribute="centerX" id="Ocp-cW-FLe"/>
+                            <constraint firstItem="pLt-8E-CwS" firstAttribute="centerX" secondItem="CsN-oc-uEV" secondAttribute="centerX" id="V0E-aQ-cGN"/>
                             <constraint firstItem="yT7-Cw-xjE" firstAttribute="centerY" secondItem="CsN-oc-uEV" secondAttribute="centerY" id="VxN-FV-RMf"/>
                             <constraint firstItem="CfS-ic-yuH" firstAttribute="leading" secondItem="h8H-qs-30v" secondAttribute="leading" constant="10" id="W7v-9e-7eq"/>
+                            <constraint firstItem="pLt-8E-CwS" firstAttribute="top" secondItem="yT7-Cw-xjE" secondAttribute="bottom" constant="50" id="Zd1-0o-eV0"/>
+                            <constraint firstItem="h8H-qs-30v" firstAttribute="trailing" secondItem="pLt-8E-CwS" secondAttribute="trailing" constant="20" id="e9R-yi-RBG"/>
                             <constraint firstItem="yT7-Cw-xjE" firstAttribute="top" secondItem="Yea-Vu-eAL" secondAttribute="bottom" constant="50" id="hqc-Ft-uOM"/>
                             <constraint firstItem="Yea-Vu-eAL" firstAttribute="leading" secondItem="h8H-qs-30v" secondAttribute="leading" constant="20" id="lqa-22-zU3"/>
                             <constraint firstItem="h8H-qs-30v" firstAttribute="trailing" secondItem="Yea-Vu-eAL" secondAttribute="trailing" constant="20" id="mXy-2K-d9A"/>
