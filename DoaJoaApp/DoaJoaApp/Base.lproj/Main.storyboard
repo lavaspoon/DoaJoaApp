@@ -321,8 +321,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="0B7-fe-Qcf"/>
                     <connections>
+                        <outlet property="drinkLabel" destination="e3n-uD-cBE" id="lJb-Gg-QvK"/>
                         <outlet property="heightLabel" destination="ftJ-5w-arb" id="0rk-E7-UzB"/>
                         <outlet property="profileImage" destination="yT7-Cw-xjE" id="MNF-fq-8je"/>
+                        <outlet property="sleepLabel" destination="XCf-Rd-fNo" id="rNL-f9-XUc"/>
                         <outlet property="weightLabel" destination="b4G-NS-HSU" id="Ihv-zc-jI5"/>
                     </connections>
                 </viewController>

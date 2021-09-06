@@ -13,6 +13,9 @@ class ProjectViewController : UIViewController {
 
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var sleepLabel: UILabel!
+    @IBOutlet weak var drinkLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("ProjectViewController-viewDidLoad()")
@@ -42,6 +45,27 @@ class ProjectViewController : UIViewController {
             weightLabel.attributedText = attributedString
             weightLabel.sizeToFit()
         }
+        if let text = sleepLabel.text {
+            let attributedString = NSMutableAttributedString(string: "")
+            let imageAttachment = NSTextAttachment()
+            imageAttachment.image = UIImage(named: "sleep")
+            imageAttachment.bounds = CGRect(x: 0, y: 0, width: 20, height: 20)
+            attributedString.append(NSAttributedString(attachment: imageAttachment))
+            attributedString.append(NSAttributedString(string: "밤잠: 9시간"))
+            sleepLabel.attributedText = attributedString
+            sleepLabel.sizeToFit()
+        }
+        if let text = drinkLabel.text {
+            let attributedString = NSMutableAttributedString(string: "")
+            let imageAttachment = NSTextAttachment()
+            imageAttachment.image = UIImage(named: "milk-bottle")
+            imageAttachment.bounds = CGRect(x: 0, y: 0, width: 20, height: 20)
+            attributedString.append(NSAttributedString(attachment: imageAttachment))
+            attributedString.append(NSAttributedString(string: "수유: 1000ml"))
+            drinkLabel.attributedText = attributedString
+            drinkLabel.sizeToFit()
+        }
+           
     }
     @IBAction func onBackBtnClicked(_ sender: UIButton) {
         print("ProjectViewController-onBackBtnClicked() called")
