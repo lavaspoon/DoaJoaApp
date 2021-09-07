@@ -26,10 +26,13 @@ class ProjectViewController : UIViewController {
         
         //라벨에 이미지 삽입
         if let text = heightLabel.text {
+            //NSMutableAttributedString -> 특정 텍스트의 색상 및 폰트를 변경할 때 사용
             let attributedString = NSMutableAttributedString(string: "")
+            //NSTextAttachment -> 텍스트 첨부 개체
             let imageAttachment = NSTextAttachment()
             imageAttachment.image = UIImage(named: "baby-boy")
             imageAttachment.bounds = CGRect(x: 0, y: 0, width: 20, height: 20)
+            //NSAttributedString -> String에 대한 Attribute들에 대한 정보를 가지고 있는 객체
             attributedString.append(NSAttributedString(attachment: imageAttachment))
             attributedString.append(NSAttributedString(string: "키: 65cm"))
             heightLabel.attributedText = attributedString
