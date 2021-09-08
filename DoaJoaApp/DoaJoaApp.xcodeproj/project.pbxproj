@@ -32,6 +32,7 @@
 		9ECA4D8A26B1999A00341A22 /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ECA4D8926B1999A00341A22 /* PopUp.storyboard */; };
 		9ECA4D8C26B1ADC800341A22 /* CustomPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECA4D8B26B1ADC800341A22 /* CustomPopUpViewController.swift */; };
 		9ECA4D8E26B9441000341A22 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECA4D8D26B9441000341A22 /* WebKit.framework */; };
+		9ECBF03F26E901B9003948D7 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECBF03E26E901B9003948D7 /* EditViewController.swift */; };
 		9ECCB17F26BD806000BDECD2 /* PopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECCB17E26BD806000BDECD2 /* PopUpDelegate.swift */; };
 		9EDCB82D26D2925800D1B3F5 /* TableVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCB82C26D2925800D1B3F5 /* TableVIewController.swift */; };
 		D1B2976A3919C4F0B5058B7E /* Pods_DoaJoaApp_DoaJoaAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94966889D0E467FCB90DFAE /* Pods_DoaJoaApp_DoaJoaAppUITests.framework */; };
@@ -89,6 +90,7 @@
 		9ECA4D8926B1999A00341A22 /* PopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
 		9ECA4D8B26B1ADC800341A22 /* CustomPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopUpViewController.swift; sourceTree = "<group>"; };
 		9ECA4D8D26B9441000341A22 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		9ECBF03E26E901B9003948D7 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		9ECCB17E26BD806000BDECD2 /* PopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpDelegate.swift; sourceTree = "<group>"; };
 		9EDCB82C26D2925800D1B3F5 /* TableVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVIewController.swift; sourceTree = "<group>"; };
 		C94966889D0E467FCB90DFAE /* Pods_DoaJoaApp_DoaJoaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoaJoaApp_DoaJoaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +233,7 @@
 				9EB8D72326C56F0E003CBEAE /* WriteViewController.swift */,
 				9EDCB82C26D2925800D1B3F5 /* TableVIewController.swift */,
 				9EC2AA7D26E25B9100F53204 /* ProjectViewController.swift */,
+				9ECBF03E26E901B9003948D7 /* EditViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				9EC2AA7E26E25B9100F53204 /* ProjectViewController.swift in Sources */,
 				9E0661EF26AD016D00547323 /* AppDelegate.swift in Sources */,
 				9EB8D72226C56DC4003CBEAE /* HomeVIewController.swift in Sources */,
+				9ECBF03F26E901B9003948D7 /* EditViewController.swift in Sources */,
 				9E44226C26DD296800C3DBE8 /* MyTableViewCell.swift in Sources */,
 				9EC77CA026CD4A0700373005 /* CircleButton.swift in Sources */,
 				9E0661F126AD016D00547323 /* SceneDelegate.swift in Sources */,

@@ -305,6 +305,9 @@
                                     <constraint firstAttribute="width" constant="50" id="7Mi-ta-sPi"/>
                                 </constraints>
                                 <state key="normal" title="Edit"/>
+                                <connections>
+                                    <segue destination="gi7-5O-Qa5" kind="show" id="Fpp-6G-TCz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.90429096936316611" blue="0.80230017037499668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -342,20 +345,21 @@
             </objects>
             <point key="canvasLocation" x="-698.39999999999998" y="824.43778110944538"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit View Controller-->
         <scene sceneID="UDc-lh-RQD">
             <objects>
-                <viewController id="gi7-5O-Qa5" sceneMemberID="viewController">
+                <viewController id="gi7-5O-Qa5" customClass="EditViewController" customModule="DoaJoaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fb4-oF-6w0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="JgT-Xf-Qcz"/>
                     </view>
+                    <navigationItem key="navigationItem" id="shc-cj-9g8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVh-xm-alu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-698" y="1511"/>
+            <point key="canvasLocation" x="-698" y="1676"/>
         </scene>
         <!--Home View Controller Controller-->
         <scene sceneID="aOH-hn-Yaj">
