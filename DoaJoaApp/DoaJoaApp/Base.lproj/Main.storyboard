@@ -82,8 +82,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8x-Uu-JPb" userLabel="ContainerView">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="F3z-9M-Vg2">
-                                        <rect key="frame" x="127.5" y="80.5" width="120" height="119"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feed2" translatesAutoresizingMaskIntoConstraints="NO" id="F3z-9M-Vg2">
+                                        <rect key="frame" x="127.5" y="80" width="120" height="120"/>
+                                        <color key="backgroundColor" red="1" green="0.90429096939999998" blue="0.80230017040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="Tje-RR-rcJ"/>
                                             <constraint firstAttribute="height" constant="120" id="dl4-lB-7PR"/>
@@ -174,7 +175,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="1" green="0.90429096939999998" blue="0.80230017040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="RaA-sK-G4L" firstAttribute="centerX" secondItem="L8x-Uu-JPb" secondAttribute="centerX" id="8Eu-lC-Xg0"/>
                                     <constraint firstItem="ixi-JR-KBG" firstAttribute="top" secondItem="F3z-9M-Vg2" secondAttribute="bottom" constant="100" id="8cx-IK-dof"/>
@@ -355,6 +356,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feed2" translatesAutoresizingMaskIntoConstraints="NO" id="ERd-TN-TSB">
                                 <rect key="frame" x="0.0" y="185" width="375" height="297"/>
+                                <color key="backgroundColor" red="1" green="0.90429096939999998" blue="0.80230017040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -771,7 +773,6 @@
         <image name="feed2" width="254" height="270"/>
         <image name="my_image" width="249" height="284"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="testImage" width="218" height="182"/>
     </resources>
 </document>
