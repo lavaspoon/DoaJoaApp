@@ -310,6 +310,13 @@
                                     <segue destination="gi7-5O-Qa5" kind="show" id="Fpp-6G-TCz"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linerImg" translatesAutoresizingMaskIntoConstraints="NO" id="bAv-Fm-RGY">
+                                <rect key="frame" x="20" y="213.5" width="100" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="PVC-it-rMF"/>
+                                    <constraint firstAttribute="height" constant="20" id="UGp-qv-wuu"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.90429096936316611" blue="0.80230017037499668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -326,8 +333,10 @@
                             <constraint firstItem="pLt-8E-CwS" firstAttribute="top" secondItem="yT7-Cw-xjE" secondAttribute="bottom" constant="50" id="Zd1-0o-eV0"/>
                             <constraint firstItem="h8H-qs-30v" firstAttribute="trailing" secondItem="pLt-8E-CwS" secondAttribute="trailing" constant="20" id="e9R-yi-RBG"/>
                             <constraint firstItem="yT7-Cw-xjE" firstAttribute="top" secondItem="Yea-Vu-eAL" secondAttribute="bottom" constant="50" id="hqc-Ft-uOM"/>
+                            <constraint firstItem="bAv-Fm-RGY" firstAttribute="top" secondItem="Yea-Vu-eAL" secondAttribute="bottom" constant="10" id="koj-U6-2Vs"/>
                             <constraint firstItem="Yea-Vu-eAL" firstAttribute="leading" secondItem="h8H-qs-30v" secondAttribute="leading" constant="20" id="lqa-22-zU3"/>
                             <constraint firstItem="h8H-qs-30v" firstAttribute="trailing" secondItem="Yea-Vu-eAL" secondAttribute="trailing" constant="20" id="mXy-2K-d9A"/>
+                            <constraint firstItem="bAv-Fm-RGY" firstAttribute="leading" secondItem="h8H-qs-30v" secondAttribute="leading" constant="20" id="nUN-em-UGS"/>
                             <constraint firstItem="yT7-Cw-xjE" firstAttribute="centerX" secondItem="CsN-oc-uEV" secondAttribute="centerX" id="nrg-a8-HuF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h8H-qs-30v"/>
@@ -771,6 +780,7 @@
     </scenes>
     <resources>
         <image name="feed2" width="254" height="270"/>
+        <image name="linerImg" width="460" height="70"/>
         <image name="my_image" width="249" height="284"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="testImage" width="218" height="182"/>
