@@ -8,6 +8,7 @@ target 'DoaJoaApp' do
   # Pods for DoaJoaApp
   pod 'lottie-ios'
   pod 'YPImagePicker'
+  pod 'ZImageCropper'
   target 'DoaJoaAppTests' do
     inherit! :search_paths
     # Pods for testing

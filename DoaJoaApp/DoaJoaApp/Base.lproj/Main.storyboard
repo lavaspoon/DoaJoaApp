@@ -245,22 +245,22 @@
                                     <action selector="onBackBtnClicked:" destination="p09-X5-WfB" eventType="touchUpInside" id="MBT-9Q-LR3"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feed2" translatesAutoresizingMaskIntoConstraints="NO" id="yT7-Cw-xjE">
-                                <rect key="frame" x="107.5" y="253.5" width="160" height="160"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feed3" translatesAutoresizingMaskIntoConstraints="NO" id="yT7-Cw-xjE">
+                                <rect key="frame" x="107.5" y="208.5" width="160" height="250"/>
                                 <color key="backgroundColor" red="1" green="0.90429096939999998" blue="0.80230017040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="2YC-2p-P0g"/>
-                                    <constraint firstAttribute="height" constant="160" id="EcH-L7-X8X"/>
+                                    <constraint firstAttribute="height" constant="250" id="EcH-L7-X8X"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="도아 6개월 성장보고서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4b-r5-17T">
-                                <rect key="frame" x="119.5" y="82" width="136" height="22"/>
+                                <rect key="frame" x="119.5" y="37" width="136" height="22"/>
                                 <fontDescription key="fontDescription" name="NanumBarunpen-Bold" family="NanumBarunpen" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Yea-Vu-eAL" userLabel="상단 스택뷰">
-                                <rect key="frame" x="20" y="183" width="335" height="20.5"/>
+                                <rect key="frame" x="20" y="138" width="335" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="키: 65.2cm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftJ-5w-arb">
                                         <rect key="frame" x="0.0" y="0.0" width="60.5" height="20.5"/>
@@ -281,7 +281,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pLt-8E-CwS" userLabel="하단 스택뷰">
-                                <rect key="frame" x="20" y="463.5" width="335" height="20.5"/>
+                                <rect key="frame" x="20" y="508.5" width="335" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="밤잠: 8시간" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCf-Rd-fNo" userLabel="Sleep Label">
                                         <rect key="frame" x="0.0" y="0.0" width="252.5" height="20.5"/>
@@ -312,14 +312,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linerImg" translatesAutoresizingMaskIntoConstraints="NO" id="bAv-Fm-RGY">
-                                <rect key="frame" x="20" y="208.5" width="100" height="20"/>
+                                <rect key="frame" x="20" y="163.5" width="100" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="PVC-it-rMF"/>
                                     <constraint firstAttribute="height" constant="20" id="UGp-qv-wuu"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linerImg" translatesAutoresizingMaskIntoConstraints="NO" id="H3d-AL-K8g">
-                                <rect key="frame" x="20" y="489" width="100" height="20"/>
+                                <rect key="frame" x="20" y="534" width="100" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="0dZ-9D-and"/>
                                     <constraint firstAttribute="width" constant="100" id="XyR-TF-PIe"/>
@@ -790,6 +790,7 @@
     </scenes>
     <resources>
         <image name="feed2" width="254" height="270"/>
+        <image name="feed3" width="3024" height="3785"/>
         <image name="linerImg" width="460" height="70"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="testImage" width="218" height="182"/>

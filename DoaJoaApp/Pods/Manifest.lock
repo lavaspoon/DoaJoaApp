@@ -5,10 +5,12 @@ PODS:
   - YPImagePicker (4.5.0):
     - PryntTrimmerView (~> 4.0.2)
     - SteviaLayout (~> 4.7.3)
+  - ZImageCropper (0.1.0)
 
 DEPENDENCIES:
   - lottie-ios
   - YPImagePicker
+  - ZImageCropper
 
 SPEC REPOS:
   trunk:
@@ -16,13 +18,15 @@ SPEC REPOS:
     - PryntTrimmerView
     - SteviaLayout
     - YPImagePicker
+    - ZImageCropper
 
 SPEC CHECKSUMS:
   lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
+  ZImageCropper: 1a5518eea94f1ce903bbfebc860bfb023d27fc62
 
-PODFILE CHECKSUM: feec342ab9283df3c2be95205ea991638b94add7
+PODFILE CHECKSUM: a1f36dbddf87c98855e20503f632b7b8b65d3d9d
 
 COCOAPODS: 1.10.1
