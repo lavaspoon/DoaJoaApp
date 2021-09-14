@@ -35,11 +35,11 @@ class HomeViewControllerController : UIViewController {
         print("HomeViewControllerController-onChangeProfileImage() called")
     }
     @IBAction func onBackBtnClicked(_ sender: UIButton) {
-         print("HomeViewControllerController-onBackBtnClicked() called")
+        print("HomeViewControllerController-onBackBtnClicked() called")
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func oneditProfileBtnClicked(_ sender: UIButton) {
-                print("HomeViewControllerController-oneditProfileBtnClicked() called")
+        print("HomeViewControllerController-oneditProfileBtnClicked() called")
     }
     @objc fileprivate func onItemBtnsClicked(sender : UIButton){
         guard let inputString = sender.titleLabel?.text else{return}
