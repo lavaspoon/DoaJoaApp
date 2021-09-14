@@ -245,8 +245,9 @@
                                     <action selector="onBackBtnClicked:" destination="p09-X5-WfB" eventType="touchUpInside" id="MBT-9Q-LR3"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_image" translatesAutoresizingMaskIntoConstraints="NO" id="yT7-Cw-xjE">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feed2" translatesAutoresizingMaskIntoConstraints="NO" id="yT7-Cw-xjE">
                                 <rect key="frame" x="107.5" y="253.5" width="160" height="160"/>
+                                <color key="backgroundColor" red="1" green="0.90429096939999998" blue="0.80230017040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="2YC-2p-P0g"/>
                                     <constraint firstAttribute="height" constant="160" id="EcH-L7-X8X"/>
@@ -790,7 +791,6 @@
     <resources>
         <image name="feed2" width="254" height="270"/>
         <image name="linerImg" width="460" height="70"/>
-        <image name="my_image" width="249" height="284"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="testImage" width="218" height="182"/>
     </resources>
