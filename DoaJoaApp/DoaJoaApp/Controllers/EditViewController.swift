@@ -8,9 +8,12 @@
 
 import UIKit
 import ZImageCropper
+import CoreGraphics
 
 class EditViewController : UIViewController {
-    @IBOutlet weak var TestImage: UIImageView!
+    @IBOutlet weak var TestImage: ZImageCropperView!
+    var croppedImage: UIImage?
+    
     override func viewDidLoad() {
            super.viewDidLoad()
             print("EditViewController-viewDidLoad()")
@@ -18,11 +21,6 @@ class EditViewController : UIViewController {
     //MARK: TEST 작업창 
     @IBAction func onCropImageBtnClicked(_ sender: UIButton) {
         print("EditViewController-onCropImageBtnClicked() called")
-        let croppedImage = ZImageCropper.cropImage(ofImageView: TestImage, withinPoints: [
-        CGPoint(x: 0, y: 0),   //Start point
-        CGPoint(x: 100, y: 0),
-        CGPoint(x: 100, y: 100),
-        CGPoint(x: 0, y: 100)  //End point
-        ])
+        croppedImage = TestImage.cropImage()
     }
 }
