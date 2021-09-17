@@ -23,4 +23,8 @@ class EditViewController : UIViewController {
         print("EditViewController-onCropImageBtnClicked() called")
         croppedImage = TestImage.cropImage()
     }
+    @IBAction func onBackBtnClicked(_ sender: UIButton) {
+        print("EditViewController-onBackBtnClicked() called")
+        self.navigationController?.popViewController(animated: true)
+    }
 }

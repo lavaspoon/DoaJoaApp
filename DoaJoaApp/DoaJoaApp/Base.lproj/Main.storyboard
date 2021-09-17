@@ -388,6 +388,17 @@
                                     <action selector="onCropImageBtnClicked:" destination="gi7-5O-Qa5" eventType="touchUpInside" id="LFo-Pq-GYg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84K-SZ-Xjq">
+                                <rect key="frame" x="16" y="54" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZBa-yx-A3h"/>
+                                    <constraint firstAttribute="width" constant="50" id="r9L-et-8aV"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="onBackBtnClicked:" destination="gi7-5O-Qa5" eventType="touchUpInside" id="gg3-xX-K7n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -395,7 +406,9 @@
                             <constraint firstItem="ERd-TN-TSB" firstAttribute="top" secondItem="JgT-Xf-Qcz" secondAttribute="top" constant="141" id="Rcf-ju-WzJ"/>
                             <constraint firstItem="ERd-TN-TSB" firstAttribute="centerX" secondItem="Fb4-oF-6w0" secondAttribute="centerX" id="TXQ-mS-Fv4"/>
                             <constraint firstItem="KCF-7R-Y79" firstAttribute="top" secondItem="JgT-Xf-Qcz" secondAttribute="top" constant="50" id="aOy-Wp-ujG"/>
+                            <constraint firstItem="84K-SZ-Xjq" firstAttribute="leading" secondItem="JgT-Xf-Qcz" secondAttribute="leading" constant="16" id="del-1M-FXm"/>
                             <constraint firstItem="ERd-TN-TSB" firstAttribute="centerY" secondItem="Fb4-oF-6w0" secondAttribute="centerY" id="eh2-Gv-4I6"/>
+                            <constraint firstItem="84K-SZ-Xjq" firstAttribute="top" secondItem="JgT-Xf-Qcz" secondAttribute="top" constant="10" id="lC1-ls-nOb"/>
                             <constraint firstItem="KCF-7R-Y79" firstAttribute="centerX" secondItem="Fb4-oF-6w0" secondAttribute="centerX" id="wLh-1E-Lem"/>
                             <constraint firstItem="ERd-TN-TSB" firstAttribute="trailing" secondItem="JgT-Xf-Qcz" secondAttribute="trailing" id="ySG-xQ-KZ7"/>
                         </constraints>
