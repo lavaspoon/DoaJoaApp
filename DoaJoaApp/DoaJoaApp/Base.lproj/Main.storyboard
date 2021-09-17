@@ -245,7 +245,7 @@
                                     <action selector="onBackBtnClicked:" destination="p09-X5-WfB" eventType="touchUpInside" id="MBT-9Q-LR3"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feed3" translatesAutoresizingMaskIntoConstraints="NO" id="yT7-Cw-xjE">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feed2" translatesAutoresizingMaskIntoConstraints="NO" id="yT7-Cw-xjE" customClass="ZImageCropperView" customModule="ZImageCropper">
                                 <rect key="frame" x="107.5" y="208.5" width="160" height="250"/>
                                 <color key="backgroundColor" red="1" green="0.90429096939999998" blue="0.80230017040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -326,7 +326,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.90429096936316611" blue="0.80230017037499668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Yea-Vu-eAL" firstAttribute="centerX" secondItem="CsN-oc-uEV" secondAttribute="centerX" id="01d-TH-4pD"/>
                             <constraint firstItem="CfS-ic-yuH" firstAttribute="top" secondItem="h8H-qs-30v" secondAttribute="top" constant="10" id="5Tq-S8-12b"/>

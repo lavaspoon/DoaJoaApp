@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import ZImageCropper
+import CoreGraphics
+
 
 class ProjectViewController : UIViewController {
-    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var profileImage: ZImageCropperView!
 
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var sleepLabel: UILabel!
     @IBOutlet weak var drinkLabel: UILabel!
     
+    var croppedImage: UIImage?
     override func viewDidLoad() {
         super.viewDidLoad()
         print("ProjectViewController-viewDidLoad()")
@@ -72,7 +76,7 @@ class ProjectViewController : UIViewController {
     }
     @IBAction func onBackBtnClicked(_ sender: UIButton) {
         print("ProjectViewController-onBackBtnClicked() called")
-        self.navigationController?.popViewController(animated: true)
+        croppedImage = profileImage.cropImage()
     }
     
 }
