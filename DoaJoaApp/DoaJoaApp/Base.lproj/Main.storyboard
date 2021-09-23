@@ -340,6 +340,18 @@
                                     <constraint firstAttribute="height" constant="20" id="yY6-sI-QU7"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvj-Ha-Qyv">
+                                <rect key="frame" x="155.5" y="579" width="64" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.90429096939999998" blue="0.80230017040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="FvK-HT-Z7V"/>
+                                    <constraint firstAttribute="height" constant="34" id="cMa-5X-H0g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NanumBarunpen" family="NanumBarunpen" pointSize="17"/>
+                                <state key="normal" title="이미지변경">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.76368538241406181" green="0.77887328604786166" blue="0.96848052740097046" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -349,6 +361,7 @@
                             <constraint firstItem="eGl-sE-rAW" firstAttribute="top" secondItem="h8H-qs-30v" secondAttribute="top" constant="10" id="9u3-5L-A6c"/>
                             <constraint firstItem="Yea-Vu-eAL" firstAttribute="top" secondItem="L4b-r5-17T" secondAttribute="bottom" constant="79" id="Cgc-Fp-Js1"/>
                             <constraint firstItem="Uba-52-AFU" firstAttribute="top" secondItem="pLt-8E-CwS" secondAttribute="bottom" constant="5" id="CpG-6u-eTn"/>
+                            <constraint firstItem="Qvj-Ha-Qyv" firstAttribute="top" secondItem="pLt-8E-CwS" secondAttribute="bottom" constant="50" id="FKa-Dp-CHY"/>
                             <constraint firstItem="H3d-AL-K8g" firstAttribute="top" secondItem="pLt-8E-CwS" secondAttribute="bottom" constant="5" id="LVY-KL-6Lr"/>
                             <constraint firstItem="pLt-8E-CwS" firstAttribute="leading" secondItem="h8H-qs-30v" secondAttribute="leading" constant="20" id="NtY-hA-u38"/>
                             <constraint firstItem="L4b-r5-17T" firstAttribute="centerX" secondItem="CsN-oc-uEV" secondAttribute="centerX" id="Ocp-cW-FLe"/>
@@ -366,6 +379,7 @@
                             <constraint firstItem="bAv-Fm-RGY" firstAttribute="leading" secondItem="h8H-qs-30v" secondAttribute="leading" constant="20" id="nUN-em-UGS"/>
                             <constraint firstItem="yT7-Cw-xjE" firstAttribute="centerX" secondItem="CsN-oc-uEV" secondAttribute="centerX" id="nrg-a8-HuF"/>
                             <constraint firstItem="DHw-5D-pga" firstAttribute="top" secondItem="Yea-Vu-eAL" secondAttribute="bottom" constant="5" id="r3j-zl-CuX"/>
+                            <constraint firstItem="Qvj-Ha-Qyv" firstAttribute="centerX" secondItem="CsN-oc-uEV" secondAttribute="centerX" id="sv7-gQ-IV3"/>
                             <constraint firstAttribute="trailing" secondItem="DHw-5D-pga" secondAttribute="trailing" constant="20" id="tdE-jz-H51"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h8H-qs-30v"/>
