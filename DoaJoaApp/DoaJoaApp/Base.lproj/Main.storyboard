@@ -341,13 +341,13 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvj-Ha-Qyv">
-                                <rect key="frame" x="155.5" y="579" width="64" height="34"/>
+                                <rect key="frame" x="147.5" y="579" width="80" height="34"/>
                                 <color key="backgroundColor" red="1" green="0.90429096939999998" blue="0.80230017040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="FvK-HT-Z7V"/>
+                                    <constraint firstAttribute="width" constant="80" id="FvK-HT-Z7V"/>
                                     <constraint firstAttribute="height" constant="34" id="cMa-5X-H0g"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="NanumBarunpen" family="NanumBarunpen" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="NanumBarunpen" family="NanumBarunpen" pointSize="14"/>
                                 <state key="normal" title="이미지변경">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -387,6 +387,7 @@
                     <navigationItem key="navigationItem" id="0B7-fe-Qcf"/>
                     <connections>
                         <outlet property="drinkLabel" destination="e3n-uD-cBE" id="lJb-Gg-QvK"/>
+                        <outlet property="editImgBtn" destination="Qvj-Ha-Qyv" id="1Ro-Kh-5I4"/>
                         <outlet property="heightLabel" destination="ftJ-5w-arb" id="0rk-E7-UzB"/>
                         <outlet property="profileImage" destination="yT7-Cw-xjE" id="MNF-fq-8je"/>
                         <outlet property="sleepLabel" destination="XCf-Rd-fNo" id="rNL-f9-XUc"/>
