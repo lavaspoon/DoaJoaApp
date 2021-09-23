@@ -38,7 +38,7 @@ class MainViewController: UIViewController, PopUpDelegate {
         self.editProfile.addTarget(self, action: #selector(editProfileClicked), for: .touchUpInside)
     }
     
-    // 프사 변경 버튼이 클리되었을때
+    // 프사 변경 버튼이 클릭되었을때
     @objc fileprivate func editProfileClicked(){
         print("MainViewController-editProfileClicked()")
         
