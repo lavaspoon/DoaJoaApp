@@ -261,14 +261,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Yea-Vu-eAL" userLabel="상단 스택뷰">
                                 <rect key="frame" x="20" y="163" width="335" height="20.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="키: 65.2cm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftJ-5w-arb">
-                                        <rect key="frame" x="0.0" y="0.0" width="60.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="키" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftJ-5w-arb">
+                                        <rect key="frame" x="0.0" y="0.0" width="12" height="20.5"/>
                                         <fontDescription key="fontDescription" name="NanumBarunpen" family="NanumBarunpen" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="몸무게: 6.3kg" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4G-NS-HSU">
-                                        <rect key="frame" x="68.5" y="0.0" width="266.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="몸무게" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4G-NS-HSU">
+                                        <rect key="frame" x="20" y="0.0" width="315" height="20.5"/>
                                         <fontDescription key="fontDescription" name="NanumBarunpen" family="NanumBarunpen" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -352,8 +352,9 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="snM-am-hUd">
-                                <rect key="frame" x="20" y="213.5" width="32" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="cm" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="snM-am-hUd">
+                                <rect key="frame" x="20" y="208.5" width="48" height="34"/>
+                                <color key="backgroundColor" red="0.76368538239999995" green="0.77887328600000005" blue="0.96848052740000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -376,7 +377,7 @@
                             <constraint firstItem="yT7-Cw-xjE" firstAttribute="centerY" secondItem="CsN-oc-uEV" secondAttribute="centerY" id="VxN-FV-RMf"/>
                             <constraint firstItem="CfS-ic-yuH" firstAttribute="leading" secondItem="h8H-qs-30v" secondAttribute="leading" constant="10" id="W7v-9e-7eq"/>
                             <constraint firstItem="pLt-8E-CwS" firstAttribute="top" secondItem="yT7-Cw-xjE" secondAttribute="bottom" constant="30" id="Zd1-0o-eV0"/>
-                            <constraint firstItem="snM-am-hUd" firstAttribute="top" secondItem="bAv-Fm-RGY" secondAttribute="bottom" constant="5" id="cUa-aO-1PL"/>
+                            <constraint firstItem="snM-am-hUd" firstAttribute="top" secondItem="bAv-Fm-RGY" secondAttribute="bottom" id="cUa-aO-1PL"/>
                             <constraint firstItem="h8H-qs-30v" firstAttribute="trailing" secondItem="pLt-8E-CwS" secondAttribute="trailing" constant="20" id="e9R-yi-RBG"/>
                             <constraint firstItem="snM-am-hUd" firstAttribute="leading" secondItem="h8H-qs-30v" secondAttribute="leading" constant="20" id="gmX-r7-HDc"/>
                             <constraint firstItem="yT7-Cw-xjE" firstAttribute="top" secondItem="Yea-Vu-eAL" secondAttribute="bottom" constant="50" id="hqc-Ft-uOM"/>

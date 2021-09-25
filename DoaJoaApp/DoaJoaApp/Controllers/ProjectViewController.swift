@@ -43,7 +43,7 @@ class ProjectViewController : UIViewController {
             imageAttachment.bounds = CGRect(x: 0, y: 0, width: 20, height: 20)
             //NSAttributedString -> String에 대한 Attribute들에 대한 정보를 가지고 있는 객체
             attributedString.append(NSAttributedString(attachment: imageAttachment))
-            attributedString.append(NSAttributedString(string: "키: 65cm"))
+            attributedString.append(NSAttributedString(string: "키"))
             heightLabel.attributedText = attributedString
             heightLabel.sizeToFit()
         }
@@ -53,7 +53,7 @@ class ProjectViewController : UIViewController {
             imageAttachment.image = UIImage(named: "maternity")
             imageAttachment.bounds = CGRect(x: 0, y: 0, width: 20, height: 20)
             attributedString.append(NSAttributedString(attachment: imageAttachment))
-            attributedString.append(NSAttributedString(string: "몸무게: 6.5kg"))
+            attributedString.append(NSAttributedString(string: "몸무게"))
             weightLabel.attributedText = attributedString
             weightLabel.sizeToFit()
         }
@@ -63,7 +63,7 @@ class ProjectViewController : UIViewController {
             imageAttachment.image = UIImage(named: "sleep")
             imageAttachment.bounds = CGRect(x: 0, y: 0, width: 20, height: 20)
             attributedString.append(NSAttributedString(attachment: imageAttachment))
-            attributedString.append(NSAttributedString(string: "밤잠: 9시간"))
+            attributedString.append(NSAttributedString(string: "밤잠"))
             sleepLabel.attributedText = attributedString
             sleepLabel.sizeToFit()
         }
@@ -73,7 +73,7 @@ class ProjectViewController : UIViewController {
             imageAttachment.image = UIImage(named: "milk-bottle")
             imageAttachment.bounds = CGRect(x: 0, y: 0, width: 20, height: 20)
             attributedString.append(NSAttributedString(attachment: imageAttachment))
-            attributedString.append(NSAttributedString(string: "수유: 1000ml"))
+            attributedString.append(NSAttributedString(string: "수유"))
             drinkLabel.attributedText = attributedString
             drinkLabel.sizeToFit()
         }
