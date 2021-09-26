@@ -1,5 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-DoaJoaApp/Pods-DoaJoaApp-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/PryntTrimmerView/PryntTrimmerView.framework
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
 ${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework
 ${BUILT_PRODUCTS_DIR}/YPImagePicker/YPImagePicker.framework
 ${BUILT_PRODUCTS_DIR}/ZImageCropper/ZImageCropper.framework
