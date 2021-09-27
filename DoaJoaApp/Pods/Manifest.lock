@@ -7,9 +7,9 @@ PODS:
   - RealmSwift (10.15.1):
     - Realm (= 10.15.1)
   - SteviaLayout (4.7.3)
-  - YPImagePicker (4.5.0):
-    - PryntTrimmerView (~> 4.0.2)
-    - SteviaLayout (~> 4.7.3)
+  - YPImagePicker (5.0.0):
+    - PryntTrimmerView (= 4.0.2)
+    - SteviaLayout (= 4.7.3)
   - ZImageCropper (0.1.0)
 
 DEPENDENCIES:
@@ -34,7 +34,7 @@ SPEC CHECKSUMS:
   Realm: fbcbde2620d51623cc5b18e28f5b165c39abef52
   RealmSwift: e4bea8e42efad3d543aea23b56504069c6faaea2
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
-  YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
+  YPImagePicker: 1463a19a36244e209dcb03c30e63559c5afa9602
   ZImageCropper: 1a5518eea94f1ce903bbfebc860bfb023d27fc62
 
 PODFILE CHECKSUM: 0a9f3a5115a364b3c419e04759276299bc4291d1

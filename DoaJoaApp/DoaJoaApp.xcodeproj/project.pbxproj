@@ -27,6 +27,7 @@
 		9EC2AA8226E274FC00F53204 /* NanumBarunpenR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EC2AA8026E274FC00F53204 /* NanumBarunpenR.ttf */; };
 		9EC2AA8326E274FC00F53204 /* NanumBarunpenB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EC2AA8126E274FC00F53204 /* NanumBarunpenB.ttf */; };
 		9EC77CA026CD4A0700373005 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC77C9F26CD4A0700373005 /* CircleButton.swift */; };
+		9EC928482700C47B00FDBF43 /* RDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC928472700C47B00FDBF43 /* RDataModel.swift */; };
 		9EC9B8A526C034EB0007ED2C /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC9B8A426C034EB0007ED2C /* WebView.storyboard */; };
 		9EC9B8A726C035AE0007ED2C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC9B8A626C035AE0007ED2C /* WebViewController.swift */; };
 		9ECA4D8A26B1999A00341A22 /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ECA4D8926B1999A00341A22 /* PopUp.storyboard */; };
@@ -85,6 +86,7 @@
 		9EC2AA8026E274FC00F53204 /* NanumBarunpenR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenR.ttf; sourceTree = "<group>"; };
 		9EC2AA8126E274FC00F53204 /* NanumBarunpenB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenB.ttf; sourceTree = "<group>"; };
 		9EC77C9F26CD4A0700373005 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		9EC928472700C47B00FDBF43 /* RDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDataModel.swift; sourceTree = "<group>"; };
 		9EC9B8A426C034EB0007ED2C /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
 		9EC9B8A626C035AE0007ED2C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		9ECA4D8926B1999A00341A22 /* PopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		9E0661ED26AD016D00547323 /* DoaJoaApp */ = {
 			isa = PBXGroup;
 			children = (
+				9EC928462700C44F00FDBF43 /* Model */,
 				9EC2AA7F26E2749500F53204 /* Fonts */,
 				9E06621F26AF06D900547323 /* 70366-blender-edit.json */,
 				9E06622126B004E900547323 /* Controllers */,
@@ -184,14 +187,14 @@
 				9E0661EE26AD016D00547323 /* AppDelegate.swift */,
 				9E0661F026AD016D00547323 /* SceneDelegate.swift */,
 				9E44226B26DD296800C3DBE8 /* MyTableViewCell.swift */,
+				9EC77C9F26CD4A0700373005 /* CircleButton.swift */,
 				9EC9B8A426C034EB0007ED2C /* WebView.storyboard */,
 				9ECA4D8926B1999A00341A22 /* PopUp.storyboard */,
 				9E0661F426AD016D00547323 /* Main.storyboard */,
-				9E0661F726AD017200547323 /* Assets.xcassets */,
 				9E0661F926AD017200547323 /* LaunchScreen.storyboard */,
 				9E0661FC26AD017200547323 /* Info.plist */,
-				9EC77C9F26CD4A0700373005 /* CircleButton.swift */,
 				9EBD7C3C26DA6E970014361D /* MyTableViewCell.xib */,
+				9E0661F726AD017200547323 /* Assets.xcassets */,
 			);
 			path = DoaJoaApp;
 			sourceTree = "<group>";
@@ -245,6 +248,14 @@
 				9EC2AA8026E274FC00F53204 /* NanumBarunpenR.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9EC928462700C44F00FDBF43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EC928472700C47B00FDBF43 /* RDataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,6 +511,7 @@
 				9EB8D72226C56DC4003CBEAE /* HomeVIewController.swift in Sources */,
 				9ECBF03F26E901B9003948D7 /* EditViewController.swift in Sources */,
 				9E44226C26DD296800C3DBE8 /* MyTableViewCell.swift in Sources */,
+				9EC928482700C47B00FDBF43 /* RDataModel.swift in Sources */,
 				9EC77CA026CD4A0700373005 /* CircleButton.swift in Sources */,
 				9E0661F126AD016D00547323 /* SceneDelegate.swift in Sources */,
 				9EC9B8A726C035AE0007ED2C /* WebViewController.swift in Sources */,
