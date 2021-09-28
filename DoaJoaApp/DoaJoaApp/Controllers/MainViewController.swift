@@ -10,6 +10,7 @@ import UIKit
 import Lottie
 import WebKit
 import YPImagePicker
+import RealmSwift
 
 let notificationName = "btnClickNotification"
 
@@ -23,6 +24,8 @@ class MainViewController: UIViewController, PopUpDelegate {
     @IBOutlet weak var gotoWebViewBtn: UIButton!
     @IBOutlet weak var gotoDoaBtn: UIButton!
     
+    // Realm 가져오기
+    let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,8 +113,27 @@ class MainViewController: UIViewController, PopUpDelegate {
         //넥비게이터로 수정필요
         self.present(webviewVC, animated: true, completion: nil)
     }
-    //MARK : gotoDoaBtn Action
+    //MARK : RealmTest
     @IBAction func onDoaBtnClicked(_ sender: UIButton) {
+        // Class 안에 데이터들 전부 삭제
+        try! realm.write {
+            realm.deleteAll()
+        }
+        //저장할 객체 만들기
+        let person1 = Person()
+        person1.name = "철수"
+        person1.age = 10
+        person1.id = 1
+
+        let person2 = Person()
+        person2.name = "영희"
+        person2.age = 20
+        person2.id = 2
+        
+        try! realm.write {
+            realm.add(person1)
+            realm.add(person2)
+        }
         print("MainViewController-onDoaBtnClicked()")
     }
     @IBAction func onTableBtnClicked(_ sender: UIButton) {

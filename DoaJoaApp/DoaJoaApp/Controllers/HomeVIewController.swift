@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class HomeViewControllerController : UIViewController {
     //
@@ -14,6 +15,7 @@ class HomeViewControllerController : UIViewController {
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet var itemBtns: [CirCleButton]!
     
+    let realm = try! Realm()
     var showFieldString = ""{
         didSet{
             DispatchQueue.main.async { [weak self] in
@@ -27,6 +29,13 @@ class HomeViewControllerController : UIViewController {
         super.viewDidLoad()
         print("HomeViewController-viewDidLoad()")
         
+        // Person 가져오기
+        let savedPerson = realm.objects(Person.self)
+        print(savedPerson)
+        // primary key 필터
+        let filter1 = savedPerson.filter("id == 1")
+        print(filter1)
+        
         for btnItem in itemBtns {
             btnItem.addTarget(self, action: #selector(onItemBtnsClicked(sender:)), for: .touchUpInside)
         }
@@ -36,6 +45,10 @@ class HomeViewControllerController : UIViewController {
     }
     @IBAction func onBackBtnClicked(_ sender: UIButton) {
         print("HomeViewControllerController-onBackBtnClicked() called")
+        // Class 안에 데이터들 전부 삭제
+        try! realm.write {
+            realm.deleteAll()
+        }
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func oneditProfileBtnClicked(_ sender: UIButton) {
